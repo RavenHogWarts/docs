@@ -26,7 +26,8 @@ export default defineConfig({
               text: 'RavenHogwarts Toolkit',
               link: '/zh/obsidian-ravenhogwarts-toolkit/',
               items: [
-                { text: '快速开始', link: '/zh/obsidian-ravenhogwarts-toolkit/guide/getting-started' }
+                { text: '快速开始', link: '/zh/obsidian-ravenhogwarts-toolkit/guide/getting-started' },
+                { text: '样式定制', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/styling' }
               ]
             }
           ]
@@ -54,7 +55,8 @@ export default defineConfig({
               text: 'RavenHogwarts Toolkit',
               link: '/en/obsidian-ravenhogwarts-toolkit/',
               items: [
-                { text: 'Getting Started', link: '/en/obsidian-ravenhogwarts-toolkit/guide/getting-started' }
+                { text: 'Getting Started', link: '/en/obsidian-ravenhogwarts-toolkit/guide/getting-started' },
+                { text: 'Styling', link: '/en/obsidian-ravenhogwarts-toolkit/advanced/styling' }
               ]
             }
           ],
@@ -65,6 +67,11 @@ export default defineConfig({
   themeConfig: {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RavenHogWarts' }
-    ]
+    ],
+    outline: 'deep',
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2024-present RavenHogWarts'
+    }
   }
 }) 
