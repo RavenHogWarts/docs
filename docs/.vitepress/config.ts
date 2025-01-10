@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Documentation',
-  description: 'Documentation for RavenHogwarts',
+  title: 'RavenHogwarts Docs',
+  description: 'Documentation for RavenHogwarts plugins, software, and tools',
   base: '/docs/',
 
   locales: {
@@ -65,13 +65,16 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    outline: 'deep',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RavenHogWarts' }
     ],
-    outline: 'deep',
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present RavenHogWarts'
     }
-  }
+  },
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://s2.loli.net/2024/06/28/bo9WN6lFAwir3ug.png' }]
+  ]
 }) 
