@@ -76,5 +76,6 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://s2.loli.net/2024/06/28/bo9WN6lFAwir3ug.png' }]
-  ]
+  ],
+  cleanUrls: true
 }) 
