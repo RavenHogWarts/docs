@@ -23,10 +23,45 @@ export default defineConfig({
         sidebar: {
           '/zh/obsidian-ravenhogwarts-toolkit/': [
             {
-              text: 'RavenHogwarts Toolkit',
-              link: '/zh/obsidian-ravenhogwarts-toolkit/',
+              text: '入门',
+              collapsed: false,
               items: [
-                { text: '快速开始', link: '/zh/obsidian-ravenhogwarts-toolkit/guide/getting-started' },
+                { text: '插件介绍', link: '/zh/obsidian-ravenhogwarts-toolkit/' },
+                { text: '下载', link: '/zh/obsidian-ravenhogwarts-toolkit/getting-started/installation' }
+              ]
+            },
+            {
+              text: '指南',
+              collapsed: false,
+              items: [
+                { text: '文档属性排序',
+                  collapsed: true,
+                  link: '/zh/obsidian-ravenhogwarts-toolkit/features/frontmatter-sorter/',
+                  items: []
+                },
+                { text: '快速路径',
+                  collapsed: true,
+                  link: '/zh/obsidian-ravenhogwarts-toolkit/features/quick-path/',
+                  items: []
+                },
+                { text: '阅读进度',
+                  collapsed: true,
+                  link: '/zh/obsidian-ravenhogwarts-toolkit/features/reading-progress/',
+                  items: []
+                },
+                { text: '表格增强',
+                  collapsed: true,
+                  link: '/zh/obsidian-ravenhogwarts-toolkit/features/table-enhancements/',
+                  items: [
+                    { text: '内置公式', link: '/zh/obsidian-ravenhogwarts-toolkit/features/table-enhancements/formula' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '定制化',
+              collapsed: false,
+              items: [
                 { text: '样式定制', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/styling' }
               ]
             }
@@ -52,10 +87,49 @@ export default defineConfig({
         sidebar: {
           '/en/obsidian-ravenhogwarts-toolkit/': [
             {
-              text: 'RavenHogwarts Toolkit',
-              link: '/en/obsidian-ravenhogwarts-toolkit/',
+              text: 'Getting Started',
+              collapsed: false,
               items: [
-                { text: 'Getting Started', link: '/en/obsidian-ravenhogwarts-toolkit/guide/getting-started' },
+                { text: 'Introduction', link: '/en/obsidian-ravenhogwarts-toolkit/' },
+                { text: 'Installation', link: '/en/obsidian-ravenhogwarts-toolkit/getting-started/installation' }
+              ]
+            },
+            {
+              text: 'Features',
+              collapsed: false,
+              items: [
+                {
+                  text: 'Front Matter Sort',
+                  collapsed: true,
+                  link: '/en/obsidian-ravenhogwarts-toolkit/features/frontmatter-sorter/',
+                  items: []
+                },
+                {
+                  text: 'Quick Path',
+                  collapsed: true,
+                  link: '/en/obsidian-ravenhogwarts-toolkit/features/quick-path/',
+                  items: []
+                },
+                {
+                  text: 'Reading Progress',
+                  collapsed: true,
+                  link: '/en/obsidian-ravenhogwarts-toolkit/features/reading-progress/',
+                  items: []
+                },
+                {
+                  text: 'Table Enhancement',
+                  collapsed: true,
+                  link: '/en/obsidian-ravenhogwarts-toolkit/features/table-enhancements/',
+                  items: [
+                    { text: 'Formula', link: '/en/obsidian-ravenhogwarts-toolkit/features/table-enhancements/formula' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: 'Customization',
+              collapsed: false,
+              items: [
                 { text: 'Styling', link: '/en/obsidian-ravenhogwarts-toolkit/advanced/styling' }
               ]
             }
