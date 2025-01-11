@@ -1,9 +1,10 @@
 # RavenHogwarts Toolkit
 
-> [!note] Introduction
-> A multi-functional toolkit plugin for Obsidian
-> 
-> Project Link: [RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-ravenhogwarts-toolkit)
+::: info Introduction
+A multi-functional toolkit plugin for Obsidian
+
+Project Link: [RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-ravenhogwarts-toolkit)
+:::
 
 ## Key Features
 

@@ -1,9 +1,10 @@
 # RavenHogwarts Toolkit
 
-> [!note] 简介
-> 一个集成了多种实用功能的 Obsidian 工具箱插件
-> 
-> 项目地址：[RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-ravenhogwarts-toolkit)
+::: info 简介
+一个集成了多种实用功能的 Obsidian 工具箱插件
+
+项目地址：[RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-ravenhogwarts-toolkit)
+:::
 
 ## 主要功能
 
