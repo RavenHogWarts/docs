@@ -146,6 +146,76 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present RavenHogWarts'
+    },
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            } 
+          }
+        },
+        miniSearch: {
+          options: {
+            // 从文档中提取字段值
+            extractField(document, fieldName) {
+              return document.frontmatter?.[fieldName] || document[fieldName]
+            },
+            // 分词方法：支持中英文，包括单字符中文
+            tokenize(text) {
+              const tokens: string[] = []
+              const matches = text.match(/[\u4e00-\u9fa5]|[a-zA-Z]+/g) || []
+              
+              matches.forEach(match => {
+                if (/[\u4e00-\u9fa5]/.test(match)) {
+                  // 对于中文文本，既保存单字，也保存连续字符
+                  // 例如 "内置公式" 会产生 ["内", "置", "公", "式", "内置", "公式", "内置公式"]
+                  for (let i = 0; i < match.length; i++) {
+                    tokens.push(match[i])  // 单字
+                    for (let j = i + 1; j <= match.length; j++) {
+                      tokens.push(match.slice(i, j))  // 连续字符
+                    }
+                  }
+                } else {
+                  // 英文单词直接添加
+                  tokens.push(match)
+                }
+              })
+              
+              // 3. 去重
+              return [...new Set(tokens)]
+            },
+            // 词条处理：对英文转小写，中文保持原样
+            processTerm(term) {
+              // 如果是英文则转小写，如果是中文则保持原样
+              return /[a-zA-Z]+/.test(term) ? term.toLowerCase() : term
+            },
+          },
+          searchOptions: {
+            fuzzy: 0.2,
+            prefix: true,
+            boost: {
+              title: 3,
+              headings: 2,
+              content: 1
+            },
+            combineWith: 'AND'
+          }
+        }
+      }
     }
   },
   head: [
