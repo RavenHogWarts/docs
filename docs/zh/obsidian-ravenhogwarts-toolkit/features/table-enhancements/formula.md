@@ -304,7 +304,7 @@ TimeSpan([column], format?:unit?)
  *      - 'days'(默认)
  *      - 'hours'
  *      - 'minutes'
- * @returns {number} - 计算结果,返回格式为format
+ * @returns {number} - 计算结果,返回格式为format，单位为unit
  */ 
 ```
 
