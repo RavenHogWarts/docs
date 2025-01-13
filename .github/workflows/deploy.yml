@@ -20,22 +20,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Install dependencies
-        run: npm ci
-      
+        run: |
+          npm ci
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+
       - name: Build with VitePress
-        run: npm run docs:build
-      
+        run: |
+          npm run docs:build
+          echo "Build completed"
+
+      - name: Debug build output
+        run: |
+          echo "Checking build output..."
+          ls -la docs/.vitepress/dist || echo "Build directory not found!"
+          echo "Current directory structure:"
+          ls -R docs/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
