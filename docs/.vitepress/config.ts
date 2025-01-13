@@ -62,7 +62,14 @@ export default defineConfig({
               text: '定制化',
               collapsed: false,
               items: [
-                { text: '样式定制', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/styling' }
+                { text: '样式定制', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/styling'}
+              ]
+            },
+            {
+              text: '支持',
+              collapsed: true,
+              items: [
+                {text: '已知问题', link: '/zh/obsidian-ravenhogwarts-toolkit/support/known-issues'}
               ]
             }
           ]
@@ -131,6 +138,13 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'Styling', link: '/en/obsidian-ravenhogwarts-toolkit/advanced/styling' }
+              ]
+            },
+            {
+              text: 'Support',
+              collapsed: true,
+              items: [
+                {text: 'Known issues', link: '/en/obsidian-ravenhogwarts-toolkit/support/known-issues'}
               ]
             }
           ],
