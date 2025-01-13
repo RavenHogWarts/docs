@@ -1,8 +1,10 @@
 name: Deploy VitePress site to Pages
 
 on:
+  # 推送到 master 分支时触发
   push:
     branches: [master]
+  # 允许手动触发部署
   workflow_dispatch:
 
 permissions:
@@ -20,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整的 git 历史
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -38,15 +42,23 @@ jobs:
 
       - name: Build with VitePress
         run: |
+          echo "Starting build process..."
+          echo "Current working directory: $(pwd)"
+          echo "Directory contents before build:"
+          ls -la
           npm run docs:build
           echo "Build completed"
 
       - name: Debug build output
+        if: always()
         run: |
           echo "Checking build output..."
-          ls -la docs/.vitepress/dist || echo "Build directory not found!"
           echo "Current directory structure:"
-          ls -R docs/
+          tree docs/ || ls -R docs/
+          echo "VitePress dist directory:"
+          ls -la docs/.vitepress/dist || echo "dist directory not found!"
+          echo "VitePress dist directory contents:"
+          ls -R docs/.vitepress/dist || echo "Unable to list dist contents"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
