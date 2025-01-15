@@ -1,4 +1,5 @@
 # 自定义样式
+所有自定义css文件都放在`<库名>/.obsidian/snippets`文件夹中
 
 ## ReadingProgress
 
@@ -18,6 +19,13 @@
 ```
 
 #### 使用方法
-1. 新建一个css文件，将上述代码复制进去，将其放在obsidian库的`.obsidian/snippets`文件夹中
+在obsidian的文档属性`cssclasses`(推荐使用)或`cssClass`中添加 `show-toc` 或 `hide-toc` 类，即可控制阅读进度条的显示。
 
-2. 在obsidian的文档属性`cssclasses`(推荐使用)或`cssClass`中添加 `show-toc` 或 `hide-toc` 类，即可控制阅读进度条的显示。
+### modal框中打开文件，阅读进度位置修复
+代码片段来源于@[primary-theme](https://github.com/primary-theme/obsidian)
+
+```css
+.workspace-leaf-content:has(.rht-reading-progress) {
+  container-type: inline-size;
+}
+```

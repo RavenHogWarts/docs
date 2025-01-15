@@ -1,4 +1,5 @@
 # Styling
+All custom CSS files should be placed in the `<vault-name>/.obsidian/snippets` folder
 
 ## ReadingProgress
 
@@ -18,6 +19,12 @@ Code snippet from @[Moy](https://github.com/Moyf)
 ```
 
 #### Usage
-1. Create a new CSS file, copy the above code into it, and place it in the `.obsidian/snippets` folder of your Obsidian vault
+Add the `show-toc` or `hide-toc` class in the document's `cssclasses` (recommended) or `cssClass` property to control the visibility of the reading progress bar.
 
-2. Add the `show-toc` or `hide-toc` class in the document's `cssclasses` (recommended) or `cssClass` property to control the visibility of the reading progress bar.
+### Fix Reading Progress Position in Modal Windows
+Code snippet from @[primary-theme](https://github.com/primary-theme/obsidian)
+
+```css
+.workspace-leaf-content:has(.rht-reading-progress) {
+  container-type: inline-size;
+}
