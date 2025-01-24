@@ -47,7 +47,9 @@ export default defineConfig({
                 { text: '阅读进度',
                   collapsed: true,
                   link: '/zh/obsidian-ravenhogwarts-toolkit/features/reading-progress/',
-                  items: []
+                  items: [
+                    { text: '阅读时间', link: '/zh/obsidian-ravenhogwarts-toolkit/features/reading-progress/reading-time' }
+                  ]
                 },
                 { text: '表格增强',
                   collapsed: true,
@@ -121,7 +123,9 @@ export default defineConfig({
                   text: 'Reading Progress',
                   collapsed: true,
                   link: '/en/obsidian-ravenhogwarts-toolkit/features/reading-progress/',
-                  items: []
+                  items: [
+                    { text: 'Reading Time', link: '/en/obsidian-ravenhogwarts-toolkit/features/reading-progress/reading-time' }
+                  ]
                 },
                 {
                   text: 'Table Enhancement',
