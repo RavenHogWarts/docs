@@ -19,5 +19,6 @@ This tool provides the following commands. Enter `quickPath` in the command pale
 
 ## Settings
 1. Add insert path options to the editor menu
-2. Choose between absolute or relative paths. Absolute paths start from the operating system root directory, while relative paths start from the current Obsidian vault root directory
-3. Choose the separator between multiple paths, supporting newline, comma, semicolon, or space
+2. Add copy path options to the file list menu
+3. Choose between absolute or relative paths. Absolute paths start from the operating system root directory, while relative paths start from the current Obsidian vault root directory
+4. Choose the separator between multiple paths, supporting newline, comma, semicolon, or space
