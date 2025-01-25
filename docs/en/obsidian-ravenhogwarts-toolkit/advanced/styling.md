@@ -58,3 +58,12 @@ Code snippet from @[primary-theme](https://github.com/primary-theme/obsidian)
 
 #### Usage
 Add the `hide-heading-number` class in the document's `cssclasses` (recommended) or `cssClass` property to hide the heading number.
+
+### Control the width of the TOC，use non-px units
+
+```css
+.rht-toc-content {
+  width: 20vw !important;
+}
+```
+

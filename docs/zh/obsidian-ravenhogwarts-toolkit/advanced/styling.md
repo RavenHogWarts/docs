@@ -58,3 +58,11 @@
 
 #### 使用方法
 在obsidian的文档属性`cssclasses`(推荐使用)或`cssClass`中添加 `hide-heading-number`，即可隐藏标题自动编号显示。
+
+### 控制目录宽度，使用非px单位
+
+```css
+.rht-toc-content {
+  width: 20vw !important;
+}
+```
