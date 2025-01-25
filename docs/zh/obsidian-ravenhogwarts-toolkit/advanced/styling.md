@@ -29,3 +29,18 @@
   container-type: inline-size;
 }
 ```
+
+### 在特定页面隐藏标题自动编号
+场景：某些文档中标题本身已经带有编号，不需要目录中再显示编号。
+
+```css
+.view-content:has(> .markdown-source-view.hide-heading-number)
+  .rht-toc-item-number,
+.view-content:has(> div:not([style*="display: none"]).hide-heading-number)
+  .rht-toc-item-number {
+  display: none;
+}
+```
+
+#### 使用方法
+在obsidian的文档属性`cssclasses`(推荐使用)或`cssClass`中添加 `hide-heading-number`，即可隐藏标题自动编号显示。
