@@ -1,6 +1,8 @@
-# RavenHogwarts Toolkit
+# RavenHogwarts Toolkit(OTK)
 
 ::: info 简介
+别名：OTK（Obsidian ToolKit）
+
 一个集成了多种实用功能的 Obsidian 工具箱插件
 
 项目地址：[RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-ravenhogwarts-toolkit)

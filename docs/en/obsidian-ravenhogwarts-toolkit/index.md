@@ -1,6 +1,8 @@
-# RavenHogwarts Toolkit
+# RavenHogwarts Toolkit(OTK)
 
 ::: info Introduction
+Alias: OTK (Obsidian ToolKit)
+
 A multi-functional toolkit plugin for Obsidian
 
 Project Link: [RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-ravenhogwarts-toolkit)

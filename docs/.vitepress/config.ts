@@ -15,7 +15,7 @@ export default defineConfig({
           { text: '首页', link: '/zh/' },
           { text: 'Obsidian插件',
             items: [
-              { text: 'RavenHogwarts Toolkit', link: '/zh/obsidian-ravenhogwarts-toolkit/' }
+              { text: 'RavenHogwarts Toolkit(OTK)', link: '/zh/obsidian-ravenhogwarts-toolkit/' }
             ]
           }
         ],
@@ -88,7 +88,7 @@ export default defineConfig({
           { text: 'Home', link: '/en/' },
           { text: 'Obsidian Plugin',
             items: [
-              { text: 'RavenHogwarts Toolkit', link: '/en/obsidian-ravenhogwarts-toolkit/' }
+              { text: 'RavenHogwarts Toolkit(OTK)', link: '/en/obsidian-ravenhogwarts-toolkit/' }
             ]
           }
         ],

@@ -32,7 +32,7 @@ hero:
                 <span class="icon">
                   <Gavel />
                 </span>
-                <h4>RavenHogwarts Toolkit</h4>
+                <h4>RavenHogwarts Toolkit(OTK)</h4>
               </div>
               <p>Multi-functional toolkit plugin</p>
             </div>

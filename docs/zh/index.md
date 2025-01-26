@@ -31,7 +31,7 @@ hero:
                 <span class="icon">
                   <Gavel />
                 </span>
-                <h4>RavenHogwarts Toolkit</h4>
+                <h4>RavenHogwarts Toolkit(OTK)</h4>
               </div>
               <p>多功能工具箱插件</p>
             </div>
