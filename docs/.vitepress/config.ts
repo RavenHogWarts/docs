@@ -34,6 +34,12 @@ export default defineConfig({
               text: '指南',
               collapsed: false,
               items: [
+                {
+                  text: '代码编辑器',
+                  collapsed: true,
+                  link: '/zh/obsidian-ravenhogwarts-toolkit/features/code-editor/',
+                  items: []
+                },
                 { text: '文档属性排序',
                   collapsed: true,
                   link: '/zh/obsidian-ravenhogwarts-toolkit/features/frontmatter-sorter/',
@@ -107,6 +113,12 @@ export default defineConfig({
               text: 'Features',
               collapsed: false,
               items: [
+                {
+                  text: 'Code Editor',
+                  collapsed: true,
+                  link: '/en/obsidian-ravenhogwarts-toolkit/features/code-editor/',
+                  items: []
+                },
                 {
                   text: 'Front Matter Sort',
                   collapsed: true,
