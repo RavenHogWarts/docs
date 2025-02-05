@@ -67,10 +67,11 @@ export default defineConfig({
               ]
             },
             {
-              text: '定制化',
+              text: '高级配置',
               collapsed: false,
               items: [
-                { text: '样式定制', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/styling'}
+                { text: '样式定制', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/styling'},
+                { text: '开发者模式', link: '/zh/obsidian-ravenhogwarts-toolkit/advanced/developer-mode'}
               ]
             },
             {
@@ -150,10 +151,11 @@ export default defineConfig({
               ]
             },
             {
-              text: 'Customization',
+              text: 'Advanced',
               collapsed: false,
               items: [
-                { text: 'Styling', link: '/en/obsidian-ravenhogwarts-toolkit/advanced/styling' }
+                { text: 'Styling', link: '/en/obsidian-ravenhogwarts-toolkit/advanced/styling' },
+                { text: 'Developer Mode', link: '/en/obsidian-ravenhogwarts-toolkit/advanced/developer-mode' }
               ]
             },
             {

@@ -10,6 +10,7 @@ Project Link: [RavenHogwarts Toolkit](https://github.com/RavenHogWarts/obsidian-
 
 ## Key Features
 
+- **Code Editor**: Edit code in Obsidian
 - **Front Matter Sort**: Automatically organize and sort document front matter content
 - **Reading Progress**: Display reading progress and table of contents in a floating window
 - **Quick Path**: Quickly get the path of specified files/folders
