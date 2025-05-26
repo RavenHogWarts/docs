@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --mode development",
+    "docs:build": "vitepress build docs --mode production",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@types/dom-view-transitions": "^1.0.6",
+    "@types/node": "^22.15.21",
+    "canvas-confetti": "^1.9.3",
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^5.2.5",
+    "@theojs/lumen": "^5.4.5",
+    "busuanzi.pure.js": "^1.0.3",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
+    "font-pingfang-sc-font-weight-improved": "^1.0.7",
+    "lucide-vue-next": "^0.511.0",
+    "markdown-it-task-checkbox": "^1.0.6",
+    "medium-zoom": "^1.1.0",
+    "vitepress-markdown-timeline": "^1.2.2",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15",
+    "vitepress-plugin-group-icons": "^1.5.5",
+    "vue": "^3.5.14",
+    "vue-router": "^4.5.1"
+  }
+}

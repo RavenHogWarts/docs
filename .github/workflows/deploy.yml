@@ -1,0 +1,41 @@
+name: Deploy VitePress site to Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+
+      - name: Build with VitePress
+        run: |
+          npm run docs:build
+          
+      - name: Deploy to docs repository
+        run: |
+          cd docs/.vitepress/dist
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Deploy documentation updates"
+          git push -f https://${{ secrets.DEPLOY_TOKEN }}@github.com/ravenhogwarts/docs.git master:gh-pages
