@@ -13,6 +13,10 @@ export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     },
     outline: { // 大纲显示 1-6 级标题
       level: [1, 6],
-    }
+    },
+    editLink: {
+      pattern: 'https://github.com/RavenHogWarts/docs-source/edit/master/:path',
+      text: 'Edit this page on GitHub'
+    },
   }
 }

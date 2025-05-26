@@ -24,3 +24,27 @@
     top: -2px;
     margin-right: 4px;
 }
+
+/* 修复B站社交链接图标 */
+.VPSocialLink[href^="https://space.bilibili.com/"] {
+    position: relative;
+}
+
+/* 隐藏默认图标 */
+.VPSocialLink[href^="https://space.bilibili.com/"] * {
+    display: none;
+}
+
+/* 添加自定义B站图标 */
+.VPSocialLink[href^="https://space.bilibili.com/"]:before {
+    content: '';
+    background-image: url(/svg/bilibili.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

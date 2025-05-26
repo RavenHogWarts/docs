@@ -5,6 +5,7 @@ import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide } from 'vue'
 import BackToTop from './BackToTop.vue'
+import Update from './Update.vue'
 
 const { isDark } = useData()
 
@@ -44,6 +45,9 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout>
+    <template #doc-before>
+      <Update />
+    </template>
     <template #doc-footer-before>
       <BackToTop />
     </template>

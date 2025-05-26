@@ -5,7 +5,7 @@ import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 
 export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: { // 主题设置
-    lastUpdatedText: '上次更新', // 上次更新显示文本
+    lastUpdatedText: '上次更新时间', // 上次更新显示文本
     returnToTopLabel: '返回顶部', // 更改手机端菜单文字显示
     search: {
       provider: 'local',
@@ -53,5 +53,9 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     },
     //大纲顶部标题
     outlineTitle: '当前页大纲',
+    editLink: {
+      pattern: 'https://github.com/RavenHogWarts/docs-source/edit/master/:path',
+      text: '在 GitHub 编辑本页'
+    },
   }
 }
