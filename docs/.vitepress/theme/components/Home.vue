@@ -1,5 +1,7 @@
 <script setup>
   import * as icons from 'lucide-vue-next'
+  import { withBase } from 'vitepress'
+
   const iconMap = icons
   // 定义组件的属性
   defineProps({
@@ -23,7 +25,7 @@
         </div>
         <div class="category-items">
           <div v-for="(item, itemIndex) in category.items" :key="`item-${itemIndex}`" class="category-item">
-            <a :href="item.link" class="item">
+            <a :href="withBase(item.link)" class="item">
               <div class="item-content">
                 <div class="item-header">
                   <span class="icon">

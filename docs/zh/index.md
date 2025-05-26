@@ -17,7 +17,6 @@ hero:
 ---
 <script setup lang="ts">
   import Home from "../.vitepress/theme/components/Home.vue"
-  import { VITE_BASE_URL } from "../.vitepress/config/share.ts"
 
   const categories = [
     {
