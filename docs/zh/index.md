@@ -8,7 +8,7 @@ hero:
   text: 探索、学习、创造
   tagline: 收录 RavenHogwarts 开发的各类插件、软件工具及实用程序的详细教程与使用指南
   image:
-    src: /logo.png
+    src: /avatar/logo.png
     alt: Vitest
   actions:
     - theme: alt
