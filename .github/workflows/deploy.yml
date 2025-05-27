@@ -29,6 +29,26 @@ jobs:
       - name: Build with VitePress
         run: |
           npm run docs:build
+      
+      - name: Copy configuration files to build directory
+        run: |
+          # 定义需要复制的文件列表  
+          FILES_TO_COPY=(
+            "vercel.json"
+            "CNAME"
+          )
+          # 目标目录
+          DIST_DIR="docs/.vitepress/dist"
+
+          # 遍历文件列表并复制存在的文件
+          for file in "${FILES_TO_COPY[@]}"; do
+            if [ -f "$file" ]; then
+              echo "Copying $file to $DIST_DIR/"
+              cp "$file" "$DIST_DIR/"
+            else
+              echo "File $file not found, skipping"
+            fi
+          done
           
       - name: Deploy to docs repository
         run: |
