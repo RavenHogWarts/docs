@@ -17,7 +17,7 @@ Obsidian 插件，提供可视化且可自定义的年度事件概览，帮助�
 - **农历支持** - 原生支持中国传统农历
 - **多语言支持** - 提供英文和中文（简体和繁体）界面
 
-![](/doc/yg-overview-zh.webp)
+![](/images/doc/yg-overview-zh.webp)
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'

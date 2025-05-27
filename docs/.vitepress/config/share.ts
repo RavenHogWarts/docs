@@ -20,7 +20,7 @@ export const sharedConfig = defineConfig({
   description: "Documentation for RavenHogwarts plugins, software, and tools", // 站点描述
   head: [ 
     // 网站 favicon.ico 图标
-    ['link', { rel: 'alternate icon',href: `${VITE_BASE_URL}avatar/favicon.png`, sizes: '32x32', type: 'image/png' }],
+    ['link', { rel: 'alternate icon',href: `${VITE_BASE_URL}images/avatar/favicon.png`, sizes: '32x32', type: 'image/png' }],
     // 引入 Google Fonts
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
@@ -133,7 +133,7 @@ export const sharedConfig = defineConfig({
         }
       },
     },
-    logo: `${VITE_BASE_URL}avatar/favicon.png`,
+    logo: `${VITE_BASE_URL}images/avatar/favicon.png`,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RavenHogWarts' }
     ],

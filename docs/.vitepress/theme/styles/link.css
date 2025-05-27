@@ -1,7 +1,7 @@
 /* YouTube */
 .vp-doc a[href^="https://www.youtube.com/"]:before {
     content: '';
-    background-image: url(/svg/youtube.svg);
+    background-image: url(/images/svg/youtube.svg);
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -14,7 +14,7 @@
 /* 哔哩哔哩 */
 .vp-doc a[href^="https://www.bilibili.com/"]:before {
     content: '';
-    background-image: url(/svg/bilibili.svg);
+    background-image: url(/images/svg/bilibili.svg);
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -38,7 +38,7 @@
 /* 添加自定义B站图标 */
 .VPSocialLink[href^="https://space.bilibili.com/"]:before {
     content: '';
-    background-image: url(/svg/bilibili.svg);
+    background-image: url(/images/svg/bilibili.svg);
     width: 20px;
     height: 20px;
     display: inline-block;
