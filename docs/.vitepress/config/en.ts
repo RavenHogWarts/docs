@@ -2,6 +2,7 @@ import { enNav } from '../navbar'
 import { enSidebar } from '../sidebar'
 import dayjs from 'dayjs'
 import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
+import { VITE_BASE_URL } from './share'
 
 export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: { // 主题设置
@@ -15,7 +16,7 @@ export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
       level: [1, 6],
     },
     editLink: {
-      pattern: 'https://github.com/RavenHogWarts/docs-source/edit/master/:path',
+      pattern: `https://github.com/RavenHogWarts/docs/edit/master/${VITE_BASE_URL == '/' ? 'docs/' : ''}:path`,
       text: 'Edit this page on GitHub'
     },
   }

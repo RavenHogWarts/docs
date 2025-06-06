@@ -2,6 +2,7 @@ import { zhNav } from '../navbar'
 import { zhSidebar } from '../sidebar'
 import dayjs from 'dayjs'
 import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
+import { VITE_BASE_URL } from './share'
 
 export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: { // 主题设置
@@ -54,7 +55,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     //大纲顶部标题
     outlineTitle: '当前页大纲',
     editLink: {
-      pattern: 'https://github.com/RavenHogWarts/docs-source/edit/master/:path',
+      pattern: `https://github.com/RavenHogWarts/docs/edit/master/${VITE_BASE_URL == '/' ? 'docs/' : ''}:path`,
       text: '在 GitHub 编辑本页'
     },
   }
