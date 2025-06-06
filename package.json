@@ -3,6 +3,7 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --mode development",
     "docs:build": "vitepress build docs --mode production",
+    "docs:vercel": "vitepress build docs --mode vercel",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {

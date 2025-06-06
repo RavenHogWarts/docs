@@ -4,10 +4,14 @@ import taskLists from 'markdown-it-task-checkbox'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 import { loadEnv } from 'vite'
-const mode = process.env.NODE_ENV || 'development'
+// 修改这里：使用 process.argv 来获取 --mode 参数
+const args = process.argv
+const modeIndex = args.findIndex(arg => arg === '--mode')
+const mode = modeIndex !== -1 && args[modeIndex + 1] ? args[modeIndex + 1] : (process.env.NODE_ENV || 'development')
 export const { VITE_BASE_URL } = loadEnv(mode, process.cwd())
 
-console.log('Mode:', process.env.NODE_ENV)
+console.log('Mode:', mode)
+console.log('NODE_ENV:', process.env.NODE_ENV)
 console.log('VITE_BASE_URL:', VITE_BASE_URL)
 
 export const sharedConfig = defineConfig({
