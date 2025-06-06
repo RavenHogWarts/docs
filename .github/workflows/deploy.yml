@@ -1,106 +1,66 @@
+# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
+#
 name: Deploy VitePress site to Pages
 
 on:
+  # 在针对 `main` 分支的推送上运行。如果你
+  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
     branches: [master]
+
+  # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
 
-# 并发控制
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
 concurrency:
-  group: deploy-docs
+  group: pages
   cancel-in-progress: false
 
-env:
-  NODE_ENV: production
-  DIST_DIR: docs/.vitepress/dist
-
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-22.04
+  # 构建工作
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout source
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
+          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+      # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
+      #   with:
+      #     version: 9
+      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-
-      # 添加构建缓存
-      - name: Cache VitePress
-        uses: actions/cache@v3
-        with:
-          path: |
-            docs/.vitepress/cache
-            docs/.vitepress/dist
-          key: ${{ runner.os }}-vitepress-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-vitepress-
-
+          cache: npm # 或 pnpm / yarn
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: |
-          npm ci
-          echo "Node version: $(node -v)"
-          echo "NPM version: $(npm -v)"
-          echo "Dependencies installed successfully"
-
+        run: npm ci # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: |
-          npm run docs:build
-          echo "Build completed successfully"
-          ls -la "$DIST_DIR"
-      
-      - name: Copy configuration files to build directory
-        run: |
-          # 定义需要复制的文件列表  
-          FILES_TO_COPY=(
-            "vercel.json"
-            "CNAME"
-            ".nojekyll"
-          )
+        run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
 
-          # 遍历文件列表并复制存在的文件
-          for file in "${FILES_TO_COPY[@]}"; do
-            if [ -f "$file" ]; then
-              echo "Copying $file to $DIST_DIR/"
-              cp "$file" "$DIST_DIR/"
-            else
-              echo "File $file not found, skipping"
-            fi
-          done
-          
-          # 创建 .nojekyll 文件（如果不存在）
-          touch "$DIST_DIR/.nojekyll"
-          
-      - name: Deploy to docs repository
-        env:
-          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-          TARGET_REPO: ravenhogwarts/docs
-        run: |
-          cd "$DIST_DIR"
-          
-          # 检查构建产物是否存在
-          if [ ! -f "index.html" ]; then
-            echo "Error: Build artifacts not found"
-            exit 1
-          fi
-          
-          git init
-          git config user.name "GitHub Actions Bot"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          
-          # 检查是否有变更
-          if git diff --staged --quiet; then
-            echo "No changes to deploy"
-            exit 0
-          fi
-          
-          git commit -m "Deploy documentation updates - $(date +'%Y-%m-%d %H:%M:%S')"
-          git push -f "https://${DEPLOY_TOKEN}@github.com/${TARGET_REPO}.git" HEAD:gh-pages
-          
-          echo "Deployment completed successfully"
-          echo "GitHub Pages URL: https://ravenhogwarts.github.io/docs/"
+  # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
