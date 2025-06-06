@@ -5,6 +5,15 @@ on:
     branches: [master]
   workflow_dispatch:
 
+# 并发控制
+concurrency:
+  group: deploy-docs
+  cancel-in-progress: false
+
+env:
+  NODE_ENV: production
+  DIST_DIR: docs/.vitepress/dist
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-22.04
@@ -20,15 +29,29 @@ jobs:
           node-version: 20
           cache: npm
 
+      # 添加构建缓存
+      - name: Cache VitePress
+        uses: actions/cache@v3
+        with:
+          path: |
+            docs/.vitepress/cache
+            docs/.vitepress/dist
+          key: ${{ runner.os }}-vitepress-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-vitepress-
+
       - name: Install dependencies
         run: |
           npm ci
           echo "Node version: $(node -v)"
           echo "NPM version: $(npm -v)"
+          echo "Dependencies installed successfully"
 
       - name: Build with VitePress
         run: |
           npm run docs:build
+          echo "Build completed successfully"
+          ls -la "$DIST_DIR"
       
       - name: Copy configuration files to build directory
         run: |
@@ -36,9 +59,8 @@ jobs:
           FILES_TO_COPY=(
             "vercel.json"
             "CNAME"
+            ".nojekyll"
           )
-          # 目标目录
-          DIST_DIR="docs/.vitepress/dist"
 
           # 遍历文件列表并复制存在的文件
           for file in "${FILES_TO_COPY[@]}"; do
@@ -50,12 +72,35 @@ jobs:
             fi
           done
           
+          # 创建 .nojekyll 文件（如果不存在）
+          touch "$DIST_DIR/.nojekyll"
+          
       - name: Deploy to docs repository
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          TARGET_REPO: ravenhogwarts/docs
         run: |
-          cd docs/.vitepress/dist
+          cd "$DIST_DIR"
+          
+          # 检查构建产物是否存在
+          if [ ! -f "index.html" ]; then
+            echo "Error: Build artifacts not found"
+            exit 1
+          fi
+          
           git init
-          git config user.name "GitHub Actions"
+          git config user.name "GitHub Actions Bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Deploy documentation updates"
-          git push -f https://${{ secrets.DEPLOY_TOKEN }}@github.com/ravenhogwarts/docs.git master:gh-pages
+          
+          # 检查是否有变更
+          if git diff --staged --quiet; then
+            echo "No changes to deploy"
+            exit 0
+          fi
+          
+          git commit -m "Deploy documentation updates - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push -f "https://${DEPLOY_TOKEN}@github.com/${TARGET_REPO}.git" HEAD:gh-pages
+          
+          echo "Deployment completed successfully"
+          echo "GitHub Pages URL: https://ravenhogwarts.github.io/docs/"

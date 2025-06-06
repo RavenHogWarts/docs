@@ -19,13 +19,15 @@ Obsidian 插件，提供可视化且可自定义的年度事件概览，帮助�
 
 ![](/images/doc/yg-overview-zh.webp)
 
+## 创作团队
+
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
   {
     avatar: 'https://www.github.com/Moyf.png',
-    name: 'Moyf',
+    name: 'Moy',
     title: 'Creator & Developer',
     links: [
       { icon: 'github', link: 'https://github.com/Moyf' },
@@ -43,7 +45,5 @@ const members = [
   },
 ]
 </script>
-
-## 创作团队
 
 <VPTeamMembers size="small" :members="members" />
