@@ -152,7 +152,8 @@ export const sharedConfig = defineConfig({
 
     logo: `${VITE_BASE_URL}images/avatar/favicon.png`,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/RavenHogWarts' }
+      { icon: 'github', link: 'https://github.com/RavenHogWarts/docs' },
+      { icon: '', link: 'https://space.bilibili.com/343113645' }
     ],
     lastUpdated: {
       formatOptions: {
