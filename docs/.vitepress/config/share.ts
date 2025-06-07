@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import timeline from "vitepress-markdown-timeline"
 import taskLists from 'markdown-it-task-checkbox'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import dayjs from 'dayjs'
 
 import { loadEnv } from 'vite'
 // 修改这里：使用 process.argv 来获取 --mode 参数
@@ -139,13 +140,18 @@ export const sharedConfig = defineConfig({
     },
     logo: `${VITE_BASE_URL}images/avatar/favicon.png`,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/RavenHogWarts' }
+      { icon: 'github', link: 'https://github.com/RavenHogWarts/docs' },
+      { icon: '', link: 'https://space.bilibili.com/343113645' }
     ],
     lastUpdated: {
       formatOptions: {
         dateStyle: 'short', // 可选值full、long、medium、short
         timeStyle: 'medium' // 可选值full、long、medium、short
       },
+    },
+    footer: { // 页脚
+      message: 'Released under the GPL-3.0 license.',
+      copyright: `Copyright © 2024-${dayjs().format("YYYY")} RavenHogWarts`
     },
   }
 })

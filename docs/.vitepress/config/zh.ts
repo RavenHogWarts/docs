@@ -1,6 +1,5 @@
 import { zhNav } from '../navbar'
 import { zhSidebar } from '../sidebar'
-import dayjs from 'dayjs'
 import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 import { VITE_BASE_URL } from './share'
 
@@ -44,10 +43,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
       prev: '上一篇', next: '下一篇'
     },
     darkModeSwitchLabel: '深浅模式', // 手机端深浅模式文字修改
-    footer: { // 页脚
-      message: 'Released under the MIT License.',
-      copyright: `Copyright © 2024-${dayjs().format("YYYY")} RavenHogWarts`
-    },
+    
     outline: { // 大纲显示 1-6 级标题
       level: [1, 6],
       label: '目录'
