@@ -85,70 +85,58 @@ export const sharedConfig = defineConfig({
     }
   },
   themeConfig: { // 主题设置
-    // miniSearch搜索
-    // search: {
-    //   provider: 'local',
-    //   options: {
-    //     miniSearch: {
-    //       options: {
-    //         // 从文档中提取字段值
-    //         extractField(document, fieldName) {
-    //           return document.frontmatter?.[fieldName] || document[fieldName]
-    //         },
-    //         // 分词方法：支持中英文，包括单字符中文
-    //         tokenize(text) {
-    //           const tokens: string[] = []
-    //           const matches = text.match(/[\u4e00-\u9fa5]|[a-zA-Z]+/g) || []
-              
-    //           matches.forEach(match => {
-    //             if (/[\u4e00-\u9fa5]/.test(match)) {
-    //               // 对于中文文本，既保存单字，也保存连续字符
-    //               // 例如 "内置公式" 会产生 ["内", "置", "公", "式", "内置", "公式", "内置公式"]
-    //               for (let i = 0; i < match.length; i++) {
-    //                 tokens.push(match[i])  // 单字
-    //                 for (let j = i + 1; j <= match.length; j++) {
-    //                   tokens.push(match.slice(i, j))  // 连续字符
-    //                 }
-    //               }
-    //             } else {
-    //               // 英文单词直接添加
-    //               tokens.push(match)
-    //             }
-    //           })
-              
-    //           // 3. 去重
-    //           return [...new Set(tokens)]
-    //         },
-    //         // 词条处理：对英文转小写，中文保持原样
-    //         processTerm(term) {
-    //           // 如果是英文则转小写，如果是中文则保持原样
-    //           return /[a-zA-Z]+/.test(term) ? term.toLowerCase() : term
-    //         },
-    //       },
-    //       searchOptions: {
-    //         fuzzy: 0.2,
-    //         prefix: true,
-    //         boost: {
-    //           title: 3,
-    //           headings: 2,
-    //           content: 1
-    //         },
-    //         combineWith: 'AND'
-    //       }
-    //     }
-    //   },
-    // },
-
-    //Algolia搜索
     search: {
-      provider: 'algolia',
+      provider: 'local',
       options: {
-        appId: 'GV7DSMPEGH',
-        apiKey: 'd6d36e6a449d989be9c15d20e95d123e',
-        indexName: 'docs',
+        miniSearch: {
+          options: {
+            // 从文档中提取字段值
+            extractField(document, fieldName) {
+              return document.frontmatter?.[fieldName] || document[fieldName]
+            },
+            // 分词方法：支持中英文，包括单字符中文
+            tokenize(text) {
+              const tokens: string[] = []
+              const matches = text.match(/[\u4e00-\u9fa5]|[a-zA-Z]+/g) || []
+              
+              matches.forEach(match => {
+                if (/[\u4e00-\u9fa5]/.test(match)) {
+                  // 对于中文文本，既保存单字，也保存连续字符
+                  // 例如 "内置公式" 会产生 ["内", "置", "公", "式", "内置", "公式", "内置公式"]
+                  for (let i = 0; i < match.length; i++) {
+                    tokens.push(match[i])  // 单字
+                    for (let j = i + 1; j <= match.length; j++) {
+                      tokens.push(match.slice(i, j))  // 连续字符
+                    }
+                  }
+                } else {
+                  // 英文单词直接添加
+                  tokens.push(match)
+                }
+              })
+              
+              // 3. 去重
+              return [...new Set(tokens)]
+            },
+            // 词条处理：对英文转小写，中文保持原样
+            processTerm(term) {
+              // 如果是英文则转小写，如果是中文则保持原样
+              return /[a-zA-Z]+/.test(term) ? term.toLowerCase() : term
+            },
+          },
+          searchOptions: {
+            fuzzy: 0.2,
+            prefix: true,
+            boost: {
+              title: 3,
+              headings: 2,
+              content: 1
+            },
+            combineWith: 'AND'
+          }
+        }
       },
     },
-
     logo: `${VITE_BASE_URL}images/avatar/favicon.png`,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RavenHogWarts' }
