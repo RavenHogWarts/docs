@@ -1,5 +1,39 @@
 import { DefaultTheme } from 'vitepress'
 export const zhSidebar: DefaultTheme.Sidebar = {
+  '/obsidian-ace-code-editor/': [
+    {
+      text: '入门',
+      collapsed: false,
+      items: [
+        { text: '插件介绍', link: '/obsidian-ace-code-editor/' },
+        { text: '下载', link: '/obsidian-ace-code-editor/installation' }
+      ]
+    },
+    {
+      text: '指南',
+      collapsed: false,
+      items: [
+            
+      ]
+    },
+    {
+      text: '支持',
+      collapsed: true,
+      items: [
+        {text: '开发路线', link: '/obsidian-ace-code-editor/roadmap'},
+      ]
+    }
+  ],
+  '/obsidian-custom-icons/': [
+    {
+      text: '入门',
+      collapsed: false,
+      items: [
+        { text: '插件介绍', link: '/obsidian-custom-icons/' },
+        { text: '下载', link: '/obsidian-custom-icons/installation' }
+      ]
+    }        
+  ],
   '/obsidian-ravenhogwarts-toolkit/': [
     {
       text: '入门',
@@ -62,25 +96,19 @@ export const zhSidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       items: [
         { text: '插件介绍', link: '/obsidian-yearly-glance/' },
-        { text: '下载', link: '/obsidian-yearly-glance/getting-started/installation' }
+        { text: '下载', link: '/obsidian-yearly-glance/installation' }
       ]
     },
     {
       text: '指南',
       collapsed: false,
       items: [
-        { text: '导入导出', link: ''},
-        { text: '', link: ''},
-        { text: '', link: ''},
-        { text: '', link: ''},
-        { text: '', link: ''},
       ]
     },
     {
       text: '支持',
       collapsed: true,
       items: [
-        { text: '更新日志', link: ''},
       ]
     }
   ],
