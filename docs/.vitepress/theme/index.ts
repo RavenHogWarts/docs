@@ -4,6 +4,7 @@ import { useData, useRoute } from 'vitepress';
 import { h, toRefs, onMounted, watch, nextTick } from 'vue'
 import MyLayout from "./components/MyLayout.vue"
 import HomeUnderline from "./components/HomeUnderline.vue"
+import NotFound from "./components/NotFound.vue"
 import './styles/index.css'
 import 'virtual:group-icons.css' //代码组样式 //
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
@@ -18,6 +19,9 @@ export default {
     },
     Layout() { 
         return h(MyLayout) 
+    },
+    NotFound() {
+        return h(NotFound)
     },
     setup() {
         // 获取前言和路由

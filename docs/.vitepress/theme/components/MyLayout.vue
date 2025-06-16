@@ -6,6 +6,7 @@ import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide } from 'vue'
 import BackToTop from './BackToTop.vue'
 import Update from './Update.vue'
+import NotFound from "./NotFound.vue"
 
 const { isDark } = useData()
 
@@ -50,6 +51,9 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     </template>
     <template #doc-footer-before>
       <BackToTop />
+    </template>
+    <template #not-found>
+      <NotFound />
     </template>
   </DefaultTheme.Layout>
 </template>
