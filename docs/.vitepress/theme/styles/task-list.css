@@ -53,6 +53,10 @@ li.task-list-item input[type="checkbox"]:checked::after {
   text-align: center;
 }
 
+li.task-list-item input[type="checkbox"]:checked ~ label {
+  opacity: 0.6;
+}
+
 .timeline-dot {
   color: #7f8c8d;
 }

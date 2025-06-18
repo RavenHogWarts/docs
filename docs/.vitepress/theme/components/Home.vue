@@ -1,8 +1,6 @@
 <script setup>
-  import * as icons from 'lucide-vue-next'
   import { withBase } from 'vitepress'
 
-  const iconMap = icons
   // 定义组件的属性
   defineProps({
     // 可以通过属性传入不同的产品类别
@@ -19,7 +17,8 @@
       <div v-for="(category, catIndex) in categories" :key="`category-${catIndex}`" class="category">
         <div class="category-header">
           <span class="category-icon">
-            <component :is="iconMap[category.icon]" />
+            <!-- 使用 LucideIcon 组件 -->
+            <LucideIcon :name="category.icon" :size="28" />
           </span>
           <h3>{{ category.title }}</h3>
         </div>
@@ -29,7 +28,8 @@
               <div class="item-content">
                 <div class="item-header">
                   <span class="icon">
-                    <component :is="iconMap[item.icon]" />
+                    <!-- 使用 LucideIcon 组件 -->
+                    <LucideIcon :name="item.icon" :size="24" />
                   </span>
                   <h4>{{ item.title }}</h4>
                 </div>
@@ -43,6 +43,7 @@
   </div>
 </template>
 
+<!-- 样式保持不变 -->
 <style>
 /* -----------------------------
  * Home Page Container

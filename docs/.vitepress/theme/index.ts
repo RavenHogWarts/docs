@@ -2,13 +2,16 @@
 import DefaultTheme from 'vitepress/theme'
 import { useData, useRoute } from 'vitepress';
 import { h, toRefs, onMounted, watch, nextTick } from 'vue'
+import * as LucideIcons from 'lucide-vue-next';
 import MyLayout from "./components/MyLayout.vue"
 import HomeUnderline from "./components/HomeUnderline.vue"
 import NotFound from "./components/NotFound.vue"
-import './styles/index.css'
-import 'virtual:group-icons.css' //代码组样式 //
+import LucideIcon from "./components/LucideIcon.vue"
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import mediumZoom from 'medium-zoom';
+import './styles/index.css'
+import 'virtual:group-icons.css' //代码组样式 //
+
 
 
 export default {
@@ -16,6 +19,10 @@ export default {
     enhanceApp({app}) { 
         // 注册全局组件
         app.component('HomeUnderline' , HomeUnderline)
+        app.component('LucideIcon', LucideIcon)
+        
+        // 将图标对象挂载到全局属性上
+        app.config.globalProperties.$lucideIcons = LucideIcons
     },
     Layout() { 
         return h(MyLayout) 
