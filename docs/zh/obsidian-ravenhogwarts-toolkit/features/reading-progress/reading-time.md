@@ -91,7 +91,7 @@
 - `template` 模板，默认值为<span v-pre>`预计阅读时间：{{time}}`</span>，其中<span v-pre>`{{time}}`</span>为计算出的阅读时间(经过格式化，值为`小于 1 分钟`或`约 X 分钟`或`约 X 小时 X 分钟`)
 - `showWordCount` 是否显示字数统计，默认值为`true`，显示总字数、中文字数、英文字数
 - `showIcon` 是否显示图标，默认值为`true`
-- `iconName` 图标名称，默认值为`clock`，图标为<Clock class="inline-icon"/>。图标名称可从[lucide](https://lucide.dev/icons/)中查找选择，大部分在obsidian中都能使用
+- `iconName` 图标名称，默认值为`clock`，图标为<LucideIcon name="Clock" :size="16" class="inline-icon"/>。图标名称可从[lucide](https://lucide.dev/icons/)中查找选择，大部分在obsidian中都能使用
 - `showRange` 是否显示阅读范围，默认值为`false`，显示效果为`约 X 分钟 - 约 X 分钟`
 
 ### 样式配置
