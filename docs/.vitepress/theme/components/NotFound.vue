@@ -60,8 +60,8 @@ const { site } = useData()
 
 // 判断当前是否为英文路径
 const isEnPath = computed(() => route.path.startsWith('/en/'))
-// 当前语言：英文路径为 'en'，其他为 'zh'（默认中文）
-const currentLang = computed(() => isEnPath.value ? 'en' : 'zh')
+// 当前语言：英文路径为 'en'，其他为 'zhHans'（默认中文）
+const currentLang = computed(() => isEnPath.value ? 'en' : 'zhHans')
 
 // 错误类型枚举
 const ERROR_TYPES = {
@@ -73,7 +73,7 @@ const ERROR_TYPES = {
 
 // 多语言文本配置
 const messages = {
-  zh: {
+  zhHans: {
     title: '页面未找到',
     description: '抱歉，您访问的页面不存在。',
     switchLanguageText: '切换到英文版',
