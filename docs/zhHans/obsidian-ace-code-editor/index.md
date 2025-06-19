@@ -4,6 +4,9 @@
 在 obsidian 中直接便捷编辑代码文件，提供语法高亮和基础补全
 
 项目地址：[Ace Code Editor](https://github.com/RavenHogWarts/obsidian-ace-code-editor)
+
+obsidian 商店安装: [Ace Code Editor](https://obsidian.md/plugins?id=ace-code-editor)
+
 :::
 
 ## 主要亮点

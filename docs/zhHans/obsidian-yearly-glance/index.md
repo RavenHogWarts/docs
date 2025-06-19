@@ -4,6 +4,8 @@
 Obsidian 插件，提供可视化且可自定义的年度事件概览，帮助您高效规划、回顾和管理全年重要日期。
 
 项目地址：[Yearly Glance](https://github.com/Moyf/yearly-glance)
+
+obsidian 商店安装: [Yearly Glance](https://obsidian.md/plugins?id=yearly-glance)
 :::
 
 ## 主要亮点

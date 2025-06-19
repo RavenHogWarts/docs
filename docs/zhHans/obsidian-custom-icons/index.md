@@ -4,6 +4,8 @@
 为 Obsidian 添加自定义图标功能，让您的笔记系统更加个性化和直观
 
 项目地址：[Custom Icons](https://github.com/RavenHogWarts/obsidian-custom-icons)
+
+obsidian 商店安装: [Custom Icons](https://obsidian.md/plugins?id=custom-sidebar-icons)
 :::
 
 ## 主要亮点
