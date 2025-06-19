@@ -19,7 +19,7 @@ obsidian 商店安装: [Yearly Glance](https://obsidian.md/plugins?id=yearly-gla
 - **农历支持** - 原生支持中国传统农历
 - **多语言支持** - 提供英文和中文（简体和繁体）界面
 
-![](/images/doc/yg-overview-zh.webp)
+![](/images/doc/YG/overview-zh.webp)
 
 ## 创作团队
 
