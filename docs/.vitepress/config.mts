@@ -34,15 +34,21 @@ const pkg = require('vitepress/package.json')
 
 const commonSidebarConfig: VitePressSidebarOptions = {
   debugPrint: true,
-  manualSortFileNameByPriority: ['introduction.md', 'guide', 'advanced-usage'],
+  manualSortFileNameByPriority: ['index.md', 'guide', 'advanced-usage'],
   excludePattern: ['changelog.md'],
   collapsed: false,
-  capitalizeFirst: true,
-  useTitleFromFileHeading: true,
-  useTitleFromFrontmatter: true,
-  useFolderTitleFromIndexFile: true,
+  collapseDepth: 2, // 在指定的深度，菜单组会折叠。
+  capitalizeFirst: true, // 菜单名称的第一个字母将强制为大写
+  useTitleFromFrontmatter: true, // 根据文件 Frontmatter 中 title 的值显示标题, 优先级高于 h1 标题
+  useTitleFromFileHeading: true, // 显示带有 .md 文件中 h1 标题内容的标题
+  useFolderTitleFromIndexFile: true, // 使用当前文件夹的 index.md 文件中的信息来获取菜单名称
   frontmatterOrderDefaultValue: 9, // For 'CHANGELOG.md'
-  sortMenusByFrontmatterOrder: true
+  sortMenusByFrontmatterOrder: true, // 对于每个文件夹，按 order 属性的值（数字）升序排序
+  excludeFilesByFrontmatterFieldName: 'draft', // 指定前缀字段名称为 true 的文档将从菜单中排除
+  includeRootIndexFile: true, // 在侧边栏菜单中包含顶级路径 index.md 文件
+  // includeFolderIndexFile: true, // 在侧边栏菜单中包含文件夹路径 index.md 文件
+  useFolderLinkFromSameNameSubFile: true, // 当存在与文件夹同名的子文件时,将在文件夹中创建一个链接,用于导航至该文件,而该文件不会显示在子项中
+  folderLinkNotIncludesFileName: true, // 在建立文件夹链接时，忽略子项的存在，并仅将链接指定为文件夹路径
 };
 
 const vitePressSidebarConfig: VitePressSidebarOptions[] = [
@@ -60,7 +66,7 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
     // 插件自定义配置
     const pluginCustomConfigs: Record<string, Partial<VitePressSidebarOptions>> = {
       'obsidian-ravenhogwarts-toolkit': {
-        manualSortFileNameByPriority: ['getting-started', 'features', 'advanced', 'support']
+        manualSortFileNameByPriority: ['index.md', 'features', 'advanced', 'support']
       }
     };
     
@@ -112,10 +118,10 @@ const vitePressI18nConfig: VitePressI18nOptions = {
         { text: '首页', link: '/' },
         { text: 'Obsidian插件',
           items: [
-            { text: 'Ace Code Editor', link: '/obsidian-ace-code-editor/introduction' },
-            { text: 'Custom Icons', link: '/obsidian-custom-icons/introduction' },
-            { text: 'Yearly Glance', link: '/obsidian-yearly-glance/introduction' },
-            { text: 'RavenHogwarts Toolkit(OTK)', link: '/obsidian-ravenhogwarts-toolkit/introduction' },
+            { text: 'Ace Code Editor', link: '/obsidian-ace-code-editor/' },
+            { text: 'Custom Icons', link: '/obsidian-custom-icons/' },
+            { text: 'Yearly Glance', link: '/obsidian-yearly-glance/' },
+            { text: 'RavenHogwarts Toolkit(OTK)', link: '/obsidian-ravenhogwarts-toolkit/' },
           ]
         },
         { text: `VitePress ${pkg.version}`, link: 'https://vitepress.dev/zh/', noIcon: true },
@@ -126,10 +132,10 @@ const vitePressI18nConfig: VitePressI18nOptions = {
         { text: 'Home', link: '/en/', activeMatch: '/en/' },
         { text: 'Obsidian Plugin',
           items: [
-            { text: 'Ace Code Editor', link: '/en/obsidian-ace-code-editor/introduction' },
-            { text: 'Custom Icons', link: '/en/obsidian-custom-icons/introduction' },
-            { text: 'Yearly Glance', link: '/en/obsidian-yearly-glance/introduction' },
-            { text: 'RavenHogwarts Toolkit(OTK)', link: '/en/obsidian-ravenhogwarts-toolkit/introduction' },
+            { text: 'Ace Code Editor', link: '/en/obsidian-ace-code-editor/' },
+            { text: 'Custom Icons', link: '/en/obsidian-custom-icons/' },
+            { text: 'Yearly Glance', link: '/en/obsidian-yearly-glance/' },
+            { text: 'RavenHogwarts Toolkit(OTK)', link: '/en/obsidian-ravenhogwarts-toolkit/' },
           ]
         },
         { text: `VitePress ${pkg.version}`, link: 'https://vitepress.dev/', noIcon: true },
