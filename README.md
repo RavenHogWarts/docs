@@ -1,7 +1,7 @@
-# RavenHogwarts Docs
-# RavenHogwarts 文档
+# RavenHogwarts Docs 
 
 > Documentation for RavenHogwarts plugins, software, and tools
+> 
 > RavenHogwarts 插件、软件和工具的文档
 
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
