@@ -65,9 +65,9 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
     
     // 插件自定义配置
     const pluginCustomConfigs: Record<string, Partial<VitePressSidebarOptions>> = {
-      'obsidian-ravenhogwarts-toolkit': {
-        manualSortFileNameByPriority: ['index.md', 'features', 'advanced-usage', 'support']
-      }
+      // 'obsidian-ravenhogwarts-toolkit': {
+      //   manualSortFileNameByPriority: ['index.md', 'features', 'advanced-usage', 'support']
+      // }
     };
     
     // 检查当前语言下哪些插件目录实际存在

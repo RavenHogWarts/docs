@@ -1,4 +1,4 @@
 ---
-title: 功能
+title: 指南
 draft: true
 ---
