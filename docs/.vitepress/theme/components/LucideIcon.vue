@@ -54,5 +54,7 @@ const iconComponent = computed(() => {
 <style>
 .lucide.inline-icon {
   display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 </style>
