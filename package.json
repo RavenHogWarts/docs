@@ -28,11 +28,12 @@
     "dotenv": "^16.5.0",
     "font-pingfang-sc-font-weight-improved": "^1.0.7",
     "lucide-vue-next": "^0.511.0",
+    "markdown-it-footnote": "^4.0.0",
     "markdown-it-task-checkbox": "^1.0.6",
     "medium-zoom": "^1.1.0",
     "vitepress-markdown-timeline": "^1.2.2",
     "vitepress-plugin-comment-with-giscus": "^1.1.15",
-    "vitepress-plugin-group-icons": "^1.5.5",
+    "vitepress-plugin-group-icons": "^1.6.0",
     "vue": "^3.5.14",
     "vue-router": "^4.5.1"
   }
