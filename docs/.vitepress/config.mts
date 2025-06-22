@@ -246,6 +246,9 @@ const vitePressConfig: UserConfig = {
       message: 'Released under the GPL-3.0 license.',
       copyright: `Copyright © 2024-${dayjs().format("YYYY")} RavenHogWarts`
     },
+    outline: { // 大纲显示 1-6 级标题
+      level: [2, 6],
+    }
   }
 };
 
