@@ -5,6 +5,7 @@ import { VitePressSidebarOptions } from 'vitepress-sidebar/types';
 import type { VitePressI18nOptions } from 'vitepress-i18n/types';
 import timeline from "vitepress-markdown-timeline"
 import taskLists from 'markdown-it-task-checkbox'
+import footnote from 'markdown-it-footnote'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import dayjs from 'dayjs'
 
@@ -215,6 +216,7 @@ const vitePressConfig: UserConfig = {
       md.use(timeline)
       md.use(taskLists)
       md.use(groupIconMdPlugin) //代码组图标
+      md.use(footnote)
     }
   },
   themeConfig: {
