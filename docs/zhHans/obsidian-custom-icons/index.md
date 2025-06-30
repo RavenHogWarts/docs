@@ -14,3 +14,23 @@ obsidian 商店安装: [Custom Icons](https://obsidian.md/plugins?id=custom-side
 - **文件夹图标自定义** - 为文件夹设置独特图标，提升视觉组织效果和导航效率
 - **多种图标来源** - 支持使用 lucide 图标库、自定义上传图标或使用 emoji 作为图标
 - **支持多种格式** - 兼容 SVG、PNG 等多种图标格式，满足不同需求
+
+## 创作团队
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://www.github.com/RavenHogwarts.png',
+    name: 'RavenHogwarts',
+    title: 'Creator & Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/RavenHogwarts' },
+      { icon: '', link: 'https://space.bilibili.com/343113645' }
+    ]
+  },
+]
+</script>
+
+<VPTeamMembers size="small" :members="members" />

@@ -10,7 +10,6 @@
 
 ## 主要功能
 
-- **文档属性排序**：自动整理和排序文档的文档属性内容
 - **阅读进度显示**：悬浮显示当前文档的阅读进度，目录等
 - **快速路径**：快速获取指定文件/文件夹的路径
 - **表格增强**：更好的利用markdown表格
@@ -20,3 +19,23 @@
 - 🛠️ 模块化设计，按需启用功能
 - 🎯 专注提升编辑效率
 - 🔄 持续更新和维护
+
+## 创作团队
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://www.github.com/RavenHogwarts.png',
+    name: 'RavenHogwarts',
+    title: 'Creator & Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/RavenHogwarts' },
+      { icon: '', link: 'https://space.bilibili.com/343113645' }
+    ]
+  },
+]
+</script>
+
+<VPTeamMembers size="small" :members="members" />

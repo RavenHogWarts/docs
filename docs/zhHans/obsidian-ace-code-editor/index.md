@@ -20,3 +20,23 @@ obsidian 商店安装: [Ace Code Editor](https://obsidian.md/plugins?id=ace-code
 - **搜索替换** - 内置强大的搜索和替换功能
 - **无缝集成** - 与 Obsidian 笔记系统完美融合
 - **多标签页编辑** - 同时打开多个代码文件进行编辑
+
+## 创作团队
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://www.github.com/RavenHogwarts.png',
+    name: 'RavenHogwarts',
+    title: 'Creator & Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/RavenHogwarts' },
+      { icon: '', link: 'https://space.bilibili.com/343113645' }
+    ]
+  },
+]
+</script>
+
+<VPTeamMembers size="small" :members="members" />
