@@ -45,6 +45,14 @@ const members = [
       { icon: '', link: 'https://space.bilibili.com/343113645' }
     ]
   },
+  {
+    avatar: 'https://www.github.com/linglilongyi.png',
+    name: 'linglilongyi',
+    title: 'Collaborator',
+    links: [
+      { icon: 'github', link: 'https://github.com/linglilongyi' },
+    ]
+  },
 ]
 </script>
 
