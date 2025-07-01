@@ -21,6 +21,31 @@ obsidian 商店安装: [Yearly Glance](https://obsidian.md/plugins?id=yearly-gla
 
 ![](/images/doc/YG/overview-zh.webp)
 
+
+## 快速上手
+
+[点击这里](./guide/quick-start) 可以快速了解本插件！
+
+
+
+## 特性介绍
+
+- [视图](./guide/view)
+- [自定义样式](./guide/style)
+- [事件](./guide/event)
+- [农历](./guide/lunar)
+
+
+## 设置功能
+
+- [基础设置](./guide/settings)
+- [事件设置](./guide/event-settings)
+- [农历设置](./guide/lunar-settings)
+
+## 进阶
+- [日期格式设置](./guide/date-format)
+
+
 ## 创作团队
 
 <script setup>
