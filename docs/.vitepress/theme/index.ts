@@ -7,6 +7,7 @@ import MyLayout from "./components/MyLayout.vue"
 import HomeUnderline from "./components/HomeUnderline.vue"
 import NotFound from "./components/NotFound.vue"
 import LucideIcon from "./components/LucideIcon.vue"
+import ThemeImage from "./components/ThemeImage.vue"
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import mediumZoom from 'medium-zoom';
 import './styles/index.css'
@@ -20,6 +21,7 @@ export default {
         // 注册全局组件
         app.component('HomeUnderline' , HomeUnderline)
         app.component('LucideIcon', LucideIcon)
+        app.component('ThemeImage', ThemeImage)
         
         // 将图标对象挂载到全局属性上
         app.config.globalProperties.$lucideIcons = LucideIcons
