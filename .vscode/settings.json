@@ -1,11 +1,7 @@
 {
   "pasteImage.path": "${projectRoot}/docs/public/images/doc/",
-  // "pasteImage.basePath": "${projectRoot}/docs/public",
-  // "pasteImage.prefix": "/",
   "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
   "pasteImage.insertPattern": "![${imageFileName}](${imageFilePath})",
   "pasteImage.showFilePathConfirmInputBox": false,
-  "markdown.updateLinksOnFileMove.enabled": "prompt",
-  "markdown.updateLinksOnFileMove.include": ["**/*.{md,png,jpg,jpeg,gif,webp,svg}"],
   "markdownLinkUpdater.exclude": ["**/node_modules/**"]
 }

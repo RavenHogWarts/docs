@@ -13,7 +13,7 @@ Yearly Glance 提供多种视图，帮助你高效浏览和管理全年事件。
 - 年历视图：以列表方式展示全年所有月份和日期，适合年度规划。
 - 经典日历视图：以传统日历表格方式展示，便于查阅每月详情。
 
-![基础视图](../../../public/images/doc/YG/view-basic-zh.pngpng)
+![基础视图](../../../public/images/doc/YG/view-basic-zh.png)
 
 ## 工具栏
 
@@ -35,4 +35,4 @@ Yearly Glance 提供多种视图，帮助你高效浏览和管理全年事件。
 - 可自定义显示内容和样式。
 - 不同视图下，事件显示方式和交互略有差异。
 
-![详细视图](../../../public/images/doc/YG/view-detail-zh.pngpng)
+![详细视图](../../../public/images/doc/YG/view-detail-zh.png)
