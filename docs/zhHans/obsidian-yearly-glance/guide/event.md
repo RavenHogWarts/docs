@@ -47,6 +47,6 @@ Yearly Glance 提供了强大的事件管理功能，帮助你轻松追踪和规
 
 - 支持按类型筛选事件，快速聚焦所需内容。
 - 点击事件可查看详情、编辑或删除。
-- 支持批量导入导出事件数据，便于迁移和备份。
+<!-- - 支持批量导入导出事件数据，便于迁移和备份。 -->
 
-> 进阶用法请参考“[关于数据](../advanced-usage/data)”和“[导入导出](../advanced-usage/import-export)”章节。
+<!-- > 进阶用法请参考“[关于数据](/obsidian-yearly-glance/advanced-usage/data)”和“[导入导出](/obsidian-yearly-glance/advanced-usage/import-export)”章节。 -->

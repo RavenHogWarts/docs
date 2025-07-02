@@ -36,4 +36,4 @@ draft: false
 - 点击事件可查看详情、编辑或删除。
 - 支持批量导入导出事件数据。
 
-> 更多高级用法请参考“[事件管理](./event)”和“[农历](./lunar)”章节。
+> 更多高级用法请参考“[事件管理](/obsidian-yearly-glance/guide/event)”和“[农历](/obsidian-yearly-glance/guide/lunar)”章节。

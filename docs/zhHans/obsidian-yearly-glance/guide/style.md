@@ -13,9 +13,9 @@ Yearly Glance 支持高度自定义的日历和事件样式，让你的年度视
 - 事件类型（节假日/生日/自定义）有默认配色，也可手动调整。
 - 事件在日历中以色块或图标形式直观展示。
 
-## Style Settings
+<!-- ## Style Settings
 
 - 插件支持与 Obsidian Style Settings 插件联动，进一步自定义界面细节。
 - 可调整字体、边框、间距等参数。
 
-> 具体样式设置请参考插件设置界面或 Style Settings 插件文档。
+> 具体样式设置请参考插件设置界面或 Style Settings 插件文档。 -->
