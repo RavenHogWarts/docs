@@ -29,37 +29,6 @@ Obsidian 插件，提供可视化且可自定义的年度事件概览，帮助�
 - **🌙 农历支持** - 原生支持中国传统农历
 - **🌐 多语言支持** - 提供英文和中文（简繁）界面
 
-
-## 快速上手
-
-[点击这里](/obsidian-yearly-glance/guide/quick-start) 可以快速了解本插件！
-
-## 特性介绍
-
-- [视图](/obsidian-yearly-glance/guide/view) 基本的视图说明
-- [样式](/obsidian-yearly-glance/guide/style) 自定义样式
-- [事件](/obsidian-yearly-glance/guide/event) 关于事件的创建和调整
-- [农历](/obsidian-yearly-glance/guide/lunar) 农历支持
-
-
-## 设置功能
-
-- [基础设置](/obsidian-yearly-glance/setting/settings)
-- [布局设置](/obsidian-yearly-glance/setting/layout-settings)
-- [事件设置](/obsidian-yearly-glance/setting/event-settings)
-- [颜色设置](/obsidian-yearly-glance/setting/color-settings)
-
-## 进阶
-
-- [关于数据](/obsidian-yearly-glance/advanced-usage/data)
-- [导入导出](/obsidian-yearly-glance/advanced-usage/import-export)
-
-
-## 关于
-
-- [插件理念](/obsidian-yearly-glance/about/concept)
-- [未来规划](/obsidian-yearly-glance/about/future)
-
 ## 创作团队
 
 <script setup>
