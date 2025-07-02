@@ -37,7 +37,8 @@ npm run docs:dev
 
 ```bash
 # 构建测试，确保没有链接错误
-npm run docs:build
+npm run docs:vercel
+npm run docs:preview
 ```
 
 
@@ -96,16 +97,18 @@ plugin-name/
 - 文件夹链接会自动指向其 `index.md` 文件
 
 3. 内部链接
-- 链接使用相对路径：
-  - 指向同一文件夹下的文件： `[链接文本](./filename.md)`
-  - 指向不同文件夹下的文件： `[链接文本](../folder/filename.md)`
+- 链接使用需要使用特殊的相对路径：`[](/obsidian-yearly-glance/)`
+  - 链接将会跳转到 `https://{domain}/{lang}/obsidian-yearly-glance/index.html`
 - 链接文本应简洁明了，避免使用复杂的标题
 - 链接应保持一致性，避免在文档迁移时变更链接
 
 4. 图片资源
 - 图片文件格式尽量使用 `.webp`
 - 统一存放在 `docs/public/images/doc/{plugin shortname}` 目录下
-- 由于 vitepress 的 `public` 目录会自动部署，使用相对路径引用： `![截图](/images/plugin-name/screenshot.webp)`
+- 图片文件名应简洁明了，避免使用复杂的标题
+- 图片使用相对路径： `![截图](../../public/images/doc/plugin-name/screenshot.webp)` 
+  - (可安装 `vscode-paste-image` 和 `Markdown Link Updater` 插件，实现自动重命名和路径更新)
+- 由于 vitepress 的 `public` 目录会自动部署，在 `img` 组件中必须使用特殊的相对路径： `<ThemeImage lightSrc="/images/doc/plugin-name/screenshot.webp" />`
 
 #### 内容组织规范
 1. 菜单折叠规范
@@ -177,7 +180,6 @@ git push origin feature/your-feature-name
 - 详细描述更改内容
 - 等待代码审查
 - 提交 PR 后，会触发 vercel 的 preview 环境，可预览效果
-- 合并 PR 后，会触发 vercel 的 deploy 环境，正式发布
 
 ## english-guide
 ### 🚀 Quick Start
@@ -205,7 +207,8 @@ npm run docs:dev
 
 ```bash
 # Build test to ensure no broken links
-npm run docs:build
+npm run docs:vercel
+npm run docs:preview
 ```
 
 
@@ -264,16 +267,18 @@ The following files will be automatically excluded, no manual configuration need
 - Folder links will automatically point to their `index.md` file.
 
 3. Internal Links
-- Use relative paths for links:
-  - Linking to a file in the same folder: `[Link Text](./filename.md)`
-  - Linking to a file in a different folder: `[Link Text](../folder/filename.md)`
+- Use a special relative path: `[](/obsidian-yearly-glance/)`
+  - Link will jump to `https://{domain}/{lang}/obsidian-yearly-glance/index.html`
 - Link text should be concise and clear, avoid using complex titles.
 - Links should be consistent to avoid changes during document migration.
 
-4. Image Resources
+1. Image Resources
 - Use `.webp` format for image files whenever possible.
 - Store all images in the `docs/public/images/doc/{plugin shortname}` directory.
-- Since VitePress automatically deploys the `public` directory, use relative paths for referencing: `![Screenshot](/images/plugin-name/screenshot.webp)`
+- Image filenames should be concise and clear.
+- Use relative paths for referencing: `![Screenshot](/images/plugin-name/screenshot.webp)`
+  - (Recommended) Install `vscode-paste-image` and `Markdown Link Updater` plugins to automatically rename and update image paths.
+- Since vitepress's `public` directory will automatically deploy, in the `img` component, use a special relative path: `<ThemeImage lightSrc="/images/doc/plugin-name/screenshot.webp" />`
 
 #### Content Organization Standards
 1. Menu Collapse Standards
@@ -343,6 +348,5 @@ git push origin feature/your-feature-name
 
 4. Create a Pull Request
 - Describe changes in detail
-- Wait for code review
+- Wait for code review and approval.
 - After submitting the PR, Vercel's preview environment will be triggered for previewing.
-- After merging the PR, Vercel's deploy environment will be triggered for formal release.

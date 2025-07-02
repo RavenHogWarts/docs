@@ -1,0 +1,7 @@
+{
+  "pasteImage.path": "${projectRoot}/docs/public/images/doc/",
+  "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+  "pasteImage.insertPattern": "![${imageFileName}](${imageFilePath})",
+  "pasteImage.showFilePathConfirmInputBox": false,
+  "markdownLinkUpdater.exclude": ["**/node_modules/**"]
+}
