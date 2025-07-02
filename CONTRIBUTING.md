@@ -267,7 +267,7 @@ The following files will be automatically excluded, no manual configuration need
 - Folder links will automatically point to their `index.md` file.
 
 3. Internal Links
-- Use use a special relative path: `[](/obsidian-yearly-glance/)`
+- Use a special relative path: `[](/obsidian-yearly-glance/)`
   - Link will jump to `https://{domain}/{lang}/obsidian-yearly-glance/index.html`
 - Link text should be concise and clear, avoid using complex titles.
 - Links should be consistent to avoid changes during document migration.
