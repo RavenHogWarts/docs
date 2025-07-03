@@ -1,3 +1,10 @@
+---
+title: 样式说明
+order: 4
+draft: false
+---
+
+
 # 样式说明
 
 Yearly Glance 支持高度自定义的日历和事件样式，让你的年度视图更美观、个性化。
@@ -18,4 +25,4 @@ Yearly Glance 支持高度自定义的日历和事件样式，让你的年度视
 - 插件支持与 Obsidian Style Settings 插件联动，进一步自定义界面细节。
 - 可调整字体、边框、间距等参数。
 
-> 具体样式设置请参考插件设置界面或 Style Settings 插件文档。
+> 具体样式设置请参考 [Style Settings](/obsidian-yearly-glance/advanced-usage/style-settings) 章节。

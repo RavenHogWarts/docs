@@ -1,6 +1,6 @@
 ---
-title: 快速上手
-order: 11
+title: 🚀 快速上手
+order: 1
 draft: false
 ---
 

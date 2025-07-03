@@ -107,6 +107,11 @@ plugin-name/
 - 统一存放在 `docs/public/images/doc/{plugin shortname}` 目录下
 - 由于 vitepress 的 `public` 目录会自动部署，使用相对路径引用： `![截图](/images/plugin-name/screenshot.webp)`
 
+5. 文件引用
+- 需要用 `/plugin-name/folder/file` 来引用
+- 例如：```请参考： “[事件管理](/obsidian-yearly-glance/guide/event)” 页面```
+- 如果使用相对路径引用，请不要带有后缀名，例如 `./event.md` 应写成 `./event`
+
 #### 内容组织规范
 1. 菜单折叠规范
 
@@ -274,6 +279,11 @@ The following files will be automatically excluded, no manual configuration need
 - Use `.webp` format for image files whenever possible.
 - Store all images in the `docs/public/images/doc/{plugin shortname}` directory.
 - Since VitePress automatically deploys the `public` directory, use relative paths for referencing: `![Screenshot](/images/plugin-name/screenshot.webp)`
+
+5. File Reference
+- Use `/plugin-name/folder/file` to reference files.
+- For example: ```Please refer to: "[Event Management](/obsidian-yearly-glance/guide/event)" page```
+- If using relative paths, do not include the file extension, e.g. `./event.md` should be written as `./event`.
 
 #### Content Organization Standards
 1. Menu Collapse Standards
