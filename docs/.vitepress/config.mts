@@ -35,7 +35,7 @@ const pkg = require('vitepress/package.json')
 
 const commonSidebarConfig: VitePressSidebarOptions = {
   debugPrint: true,
-  manualSortFileNameByPriority: ['index.md', 'guide', 'advanced-usage'],
+  manualSortFileNameByPriority: ['index.md', 'guide', 'advanced-usage', 'support'],
   excludePattern: ['changelog.md'],
   collapsed: false,
   collapseDepth: 2, // 在指定的深度，菜单组会折叠。
@@ -69,6 +69,9 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
       // 'obsidian-ravenhogwarts-toolkit': {
       //   manualSortFileNameByPriority: ['index.md', 'features', 'advanced-usage', 'support']
       // }
+      'obsidian-yearly-glance': {
+        manualSortFileNameByPriority: ['index.md', 'guide', 'setting', 'advanced-usage', 'about','support'],
+      }
     };
     
     // 检查当前语言下哪些插件目录实际存在

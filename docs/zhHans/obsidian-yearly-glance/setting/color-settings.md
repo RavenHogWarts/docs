@@ -1,6 +1,6 @@
 ---
 title: 颜色设置
-order: 13
+order: 4
 draft: false
 ---
 

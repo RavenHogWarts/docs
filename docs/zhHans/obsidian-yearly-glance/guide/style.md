@@ -1,3 +1,9 @@
+---
+title: 样式说明
+order: 6
+draft: false
+---
+
 # 样式说明
 
 Yearly Glance 支持高度自定义的日历和事件样式，让你的年度视图更美观、个性化。
