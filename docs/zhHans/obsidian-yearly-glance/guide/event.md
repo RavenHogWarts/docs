@@ -48,7 +48,7 @@ Yearly Glance 提供了强大的事件管理功能，帮助你轻松追踪和规
 
 ## 事件筛选与管理
 
-如需批量管理和查询事件，请使用 [事件管理器](/obsidian-yearly-glance/advanced-usage/event-manager)。
+如需批量管理和查询事件，请使用 [事件管理器](/obsidian-yearly-glance/guide/event-manager)。
 
 - 支持按类型筛选事件，快速聚焦所需内容。
 - 点击事件可查看详情、编辑或删除。
