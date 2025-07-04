@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zhHans/obsidian-yearly-glance/setting/settings.md",
+                "file": "zhHans/obsidian-yearly-glance/about/concept.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "settings"
+              "title": "concept"
             }
           }
         ]
@@ -168,13 +168,24 @@
   },
   "active": "185a1f2737d397ab",
   "lastOpenFiles": [
+    "docs/public/images/doc/YG/image-1.webp",
+    "docs/public/images/doc/YG/image.webp",
+    "docs/public/images/doc/YG/test-image.webp",
+    "docs/public/images/doc/YG",
+    "docs/public/images/doc",
+    "docs/public/images",
+    "docs/public",
+    "docs",
+    "zhHans/obsidian-yearly-glance/about/future.md",
+    "zhHans/obsidian-yearly-glance/about/index.md",
+    "zhHans/obsidian-yearly-glance/advanced-usage/index.md",
+    "zhHans/obsidian-yearly-glance/setting/index.md",
+    "zhHans/obsidian-yearly-glance/guide/index.md",
+    "zhHans/obsidian-yearly-glance/setting/settings.md",
     "zhHans/obsidian-yearly-glance/setting/layout-settings.md",
     "zhHans/obsidian-yearly-glance/setting/event-settings.md",
     "zhHans/obsidian-yearly-glance/setting/color-settings.md",
     "zhHans/obsidian-yearly-glance/guide/view.md",
-    "zhHans/obsidian-yearly-glance/setting/index.md",
-    "zhHans/obsidian-yearly-glance/advanced-usage/index.md",
-    "zhHans/obsidian-yearly-glance/about/index.md",
     "zhHans/obsidian-yearly-glance/index.md",
     "zhHans/obsidian-ravenhogwarts-toolkit/index.md",
     "zhHans/index.md"

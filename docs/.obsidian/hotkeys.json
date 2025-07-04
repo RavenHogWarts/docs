@@ -13,5 +13,14 @@
       ],
       "key": "S"
     }
+  ],
+  "open-vscode:open-vscode": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "O"
+    }
   ]
 }
