@@ -13,15 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zhHans/obsidian-yearly-glance/about/concept.md",
+                "file": "zhHans/obsidian-yearly-glance/guide/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "concept"
+              "title": "index"
+            }
+          },
+          {
+            "id": "6b912d292434d83f",
+            "type": "leaf",
+            "state": {
+              "type": "yearly-glance-view",
+              "state": {},
+              "icon": "telescope",
+              "title": "年度概览"
+            }
+          },
+          {
+            "id": "9bf1247e7e780407",
+            "type": "leaf",
+            "state": {
+              "type": "yearly-glance-event-view",
+              "state": {},
+              "icon": "square-chart-gantt",
+              "title": "事件管理"
+            }
+          },
+          {
+            "id": "9051e35a5b37cdc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zhHans/obsidian-yearly-glance/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -163,22 +198,35 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "open-vscode:VSCode": false,
       "yearly-glance:打开年度概览": false
     }
   },
-  "active": "185a1f2737d397ab",
+  "active": "9051e35a5b37cdc0",
   "lastOpenFiles": [
+    "public/images/doc/YG/YG-banner-zh-dark.webp",
+    "public/psd/YG-banner-zh-dark.webp",
+    "public/psd/ps8A7E.tmp",
+    "public/images/doc/YG/YG-banner-zh-light.webp",
+    "public/psd/ps1B9.tmp",
+    "public/psd/psD97F.tmp",
+    "public/psd/ps8347.tmp",
+    "public/images/doc/YG/YG-banner-light.png",
+    "public/psd/ps33AF.tmp",
+    "public/psd/psA5F3.tmp",
+    "public/images/doc/YG/YG-banner-dark.png",
+    "public/psd/YG-banner.psd",
+    "public/psd",
+    "public/新建文件夹",
+    "zhHans/obsidian-yearly-glance/advanced-usage/data.md",
+    "zhHans/obsidian-yearly-glance/advanced-usage/index.md",
+    "zhHans/obsidian-yearly-glance/about/index.md",
+    "zhHans/obsidian-yearly-glance/about/concept.md",
+    "zhHans/obsidian-yearly-glance/about/future.md",
     "docs/public/images/doc/YG/image-1.webp",
     "docs/public/images/doc/YG/image.webp",
     "docs/public/images/doc/YG/test-image.webp",
     "docs/public/images/doc/YG",
-    "docs/public/images/doc",
-    "docs/public/images",
-    "docs/public",
-    "docs",
-    "zhHans/obsidian-yearly-glance/about/future.md",
-    "zhHans/obsidian-yearly-glance/about/index.md",
-    "zhHans/obsidian-yearly-glance/advanced-usage/index.md",
     "zhHans/obsidian-yearly-glance/setting/index.md",
     "zhHans/obsidian-yearly-glance/guide/index.md",
     "zhHans/obsidian-yearly-glance/setting/settings.md",

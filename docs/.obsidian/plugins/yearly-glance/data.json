@@ -21,43 +21,43 @@
     "showDebugInfo": false,
     "presetColors": [
       {
-        "label": "",
+        "label": "红色",
         "value": "#FF2D55",
         "enable": true,
         "id": "red"
       },
       {
-        "label": "",
+        "label": "橙色",
         "value": "#FF9500",
         "enable": true,
         "id": "orange"
       },
       {
-        "label": "",
+        "label": "黄色",
         "value": "#FFCC00",
         "enable": true,
         "id": "yellow"
       },
       {
-        "label": "",
+        "label": "绿色",
         "value": "#65DB39",
         "enable": true,
         "id": "green"
       },
       {
-        "label": "",
+        "label": "蓝色",
         "value": "#34AADC",
         "enable": true,
         "id": "blue"
       },
       {
-        "label": "",
+        "label": "紫色",
         "value": "#CC73E1",
         "enable": true,
         "id": "purple"
       },
       {
-        "label": "",
+        "label": "棕色",
         "value": "#A2845E",
         "enable": true,
         "id": "brown"
@@ -436,7 +436,928 @@
         ]
       }
     ],
-    "birthdays": [],
-    "customEvents": []
+    "birthdays": [
+      {
+        "id": "birth-25242e0a",
+        "date": "2025,4,1",
+        "dateType": "SOLAR",
+        "text": "小狗生日",
+        "emoji": "🐕",
+        "nextBirthday": "2026-04-01",
+        "age": 0,
+        "animal": "乙巳蛇",
+        "zodiac": "白羊座",
+        "isHidden": false,
+        "dateArr": [
+          "2025-04-01"
+        ]
+      },
+      {
+        "id": "birth-2b0cf275",
+        "date": "2025,2,11",
+        "dateType": "SOLAR",
+        "text": "阿星生日",
+        "emoji": "⭐️",
+        "nextBirthday": "2026-02-11",
+        "age": 0,
+        "animal": "乙巳蛇",
+        "zodiac": "水瓶座",
+        "isHidden": false,
+        "dateArr": [
+          "2025-02-11"
+        ]
+      },
+      {
+        "id": "birth-f231c82e",
+        "date": "2025,3,6",
+        "dateType": "SOLAR",
+        "text": "天天生日",
+        "nextBirthday": "2026-03-06",
+        "age": 0,
+        "animal": "乙巳蛇",
+        "zodiac": "双鱼座",
+        "isHidden": false,
+        "dateArr": [
+          "2025-03-06"
+        ]
+      },
+      {
+        "id": "birth-843b76fd",
+        "date": "2025,1,6",
+        "dateType": "SOLAR",
+        "text": "Tim 生日",
+        "nextBirthday": "2026-01-06",
+        "age": 0,
+        "animal": "甲辰龙",
+        "zodiac": "摩羯座",
+        "isHidden": false,
+        "dateArr": [
+          "2025-01-06"
+        ]
+      }
+    ],
+    "customEvents": [
+      {
+        "id": "cust-birthday",
+        "text": "生日",
+        "date": "5,20",
+        "dateType": "SOLAR",
+        "emoji": "🎂",
+        "color": "#faad14",
+        "remark": "我的生日",
+        "dateArr": [
+          "2025-05-20"
+        ]
+      },
+      {
+        "id": "cust-anniversary",
+        "text": "结婚纪念日",
+        "date": "10,10",
+        "dateType": "SOLAR",
+        "emoji": "💍",
+        "color": "#ff85c0",
+        "remark": "结婚纪念日",
+        "dateArr": [
+          "2025-10-10"
+        ]
+      },
+      {
+        "id": "cust-family-trip",
+        "text": "家庭旅行",
+        "date": "7,15",
+        "dateType": "SOLAR",
+        "emoji": "🏖️",
+        "color": "#40a9ff",
+        "remark": "暑假家庭出游",
+        "dateArr": [
+          "2025-07-15"
+        ]
+      },
+      {
+        "id": "cust-annual-checkup",
+        "text": "年度体检",
+        "date": "4,8",
+        "dateType": "SOLAR",
+        "emoji": "🩺",
+        "color": "#52c41a",
+        "remark": "健康检查",
+        "dateArr": [
+          "2025-04-08"
+        ]
+      },
+      {
+        "id": "cust-friend-party",
+        "text": "朋友聚会",
+        "date": "3,22",
+        "dateType": "SOLAR",
+        "emoji": "🍻",
+        "color": "#ff85c0",
+        "remark": "老友相聚",
+        "dateArr": [
+          "2025-03-22"
+        ]
+      },
+      {
+        "id": "cust-movie-night",
+        "text": "观影之夜",
+        "date": "2,14",
+        "dateType": "SOLAR",
+        "emoji": "🍿",
+        "color": "#ff85c0",
+        "remark": "情人节看电影",
+        "dateArr": [
+          "2025-02-14"
+        ]
+      },
+      {
+        "id": "cust-project-deadline",
+        "text": "项目截止",
+        "date": "6,30",
+        "dateType": "SOLAR",
+        "emoji": "🗂️",
+        "color": "#cc73e1",
+        "remark": "年度大项目收尾",
+        "dateArr": [
+          "2025-06-30"
+        ]
+      },
+      {
+        "id": "cust-promotion",
+        "text": "升职",
+        "date": "9,1",
+        "dateType": "SOLAR",
+        "emoji": "🏆",
+        "color": "#cc73e1",
+        "remark": "晋升新岗位",
+        "dateArr": [
+          "2025-09-01"
+        ]
+      },
+      {
+        "id": "cust-company-annual-meeting",
+        "text": "公司年会",
+        "date": "1,18",
+        "dateType": "SOLAR",
+        "emoji": "🏢",
+        "color": "#cc73e1",
+        "remark": "年度总结与聚餐",
+        "dateArr": [
+          "2025-01-18"
+        ]
+      },
+      {
+        "id": "cust-sports-day",
+        "text": "运动会",
+        "date": "5,10",
+        "dateType": "SOLAR",
+        "emoji": "🏃‍♂️",
+        "color": "#65db39",
+        "remark": "公司运动会",
+        "dateArr": [
+          "2025-05-10"
+        ]
+      },
+      {
+        "id": "cust-child-birthday",
+        "text": "孩子生日",
+        "date": "11,2",
+        "dateType": "SOLAR",
+        "emoji": "🎈",
+        "color": "#faad14",
+        "remark": "宝贝生日",
+        "dateArr": [
+          "2025-11-02"
+        ]
+      },
+      {
+        "id": "cust-parents-visit",
+        "text": "父母来访",
+        "date": "4,20",
+        "dateType": "SOLAR",
+        "emoji": "👨‍👩‍👧‍👦",
+        "color": "#40a9ff",
+        "remark": "父母来家里住",
+        "dateArr": [
+          "2025-04-20"
+        ]
+      },
+      {
+        "id": "cust-vacation",
+        "text": "假期出游",
+        "date": "10,2",
+        "dateType": "SOLAR",
+        "emoji": "✈️",
+        "color": "#40a9ff",
+        "remark": "国庆长假旅行",
+        "dateArr": [
+          "2025-10-02"
+        ]
+      },
+      {
+        "id": "cust-reading-challenge",
+        "text": "阅读挑战",
+        "date": "8,1",
+        "dateType": "SOLAR",
+        "emoji": "📚",
+        "color": "#52c41a",
+        "remark": "每年暑期读书计划",
+        "dateArr": [
+          "2025-08-01"
+        ]
+      },
+      {
+        "id": "cust-music-festival",
+        "date": "6,5",
+        "dateType": "SOLAR",
+        "text": "音乐节",
+        "emoji": "🥳",
+        "color": "#ff85c0",
+        "remark": "夏日音乐节",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-06-05"
+        ]
+      },
+      {
+        "id": "cust-parents-birthday",
+        "text": "父母生日",
+        "date": "12,12",
+        "dateType": "SOLAR",
+        "emoji": "🎂",
+        "color": "#faad14",
+        "remark": "父母生日",
+        "dateArr": [
+          "2025-12-12"
+        ]
+      },
+      {
+        "id": "cust-exam-day",
+        "text": "考试日",
+        "date": "6,7",
+        "dateType": "SOLAR",
+        "emoji": "📝",
+        "color": "#cc73e1",
+        "remark": "重要考试",
+        "dateArr": [
+          "2025-06-07"
+        ]
+      },
+      {
+        "id": "cust-new-year-plan",
+        "text": "新年计划",
+        "date": "1,2",
+        "dateType": "SOLAR",
+        "emoji": "🗓️",
+        "color": "#52c41a",
+        "remark": "制定年度目标",
+        "dateArr": [
+          "2025-01-02"
+        ]
+      },
+      {
+        "id": "cust-spring-outing",
+        "text": "春游",
+        "date": "4,12",
+        "dateType": "SOLAR",
+        "emoji": "🌸",
+        "color": "#40a9ff",
+        "remark": "春季踏青",
+        "dateArr": [
+          "2025-04-12"
+        ]
+      },
+      {
+        "id": "cust-annual-bonus",
+        "text": "年终奖发放",
+        "date": "1,25",
+        "dateType": "SOLAR",
+        "emoji": "💰",
+        "color": "#cc73e1",
+        "remark": "公司发年终奖",
+        "dateArr": [
+          "2025-01-25"
+        ]
+      },
+      {
+        "id": "cust-fitness-challenge",
+        "text": "健身挑战",
+        "date": "5,1",
+        "dateType": "SOLAR",
+        "emoji": "💪",
+        "color": "#65db39",
+        "remark": "五一健身打卡",
+        "dateArr": [
+          "2025-05-01"
+        ]
+      },
+      {
+        "id": "cust-camping",
+        "text": "露营",
+        "date": "9,20",
+        "dateType": "SOLAR",
+        "emoji": "🏕️",
+        "color": "#40a9ff",
+        "remark": "秋季户外露营",
+        "dateArr": [
+          "2025-09-20"
+        ]
+      },
+      {
+        "id": "cust-family-dinner",
+        "text": "家庭聚餐",
+        "date": "12,24",
+        "dateType": "SOLAR",
+        "emoji": "🍲",
+        "color": "#faad14",
+        "remark": "平安夜家庭聚餐",
+        "dateArr": [
+          "2025-12-24"
+        ]
+      },
+      {
+        "id": "cust-pet-vaccine",
+        "text": "宠物疫苗",
+        "date": "3,18",
+        "dateType": "SOLAR",
+        "emoji": "🐶",
+        "color": "#52c41a",
+        "remark": "宠物年度疫苗",
+        "dateArr": [
+          "2025-03-18"
+        ]
+      },
+      {
+        "id": "cust-date-night",
+        "text": "约会之夜",
+        "date": "7,7",
+        "dateType": "LUNAR",
+        "emoji": "💑",
+        "color": "#ff85c0",
+        "remark": "七夕约会",
+        "dateArr": [
+          "2025-08-29"
+        ]
+      },
+      {
+        "id": "cust-driving-license-renewal",
+        "text": "驾照换证",
+        "date": "11,15",
+        "dateType": "SOLAR",
+        "emoji": "🚗",
+        "color": "#52c41a",
+        "remark": "驾照到期换证",
+        "dateArr": [
+          "2025-11-15"
+        ]
+      },
+      {
+        "id": "cust-hiking",
+        "text": "登山",
+        "date": "10,18",
+        "dateType": "SOLAR",
+        "emoji": "🥾",
+        "color": "#40a9ff",
+        "remark": "秋季登山活动",
+        "dateArr": [
+          "2025-10-18"
+        ]
+      },
+      {
+        "id": "cust-art-exhibition",
+        "text": "艺术展览",
+        "date": "8,20",
+        "dateType": "SOLAR",
+        "emoji": "🖼️",
+        "color": "#ff85c0",
+        "remark": "参观艺术展",
+        "dateArr": [
+          "2025-08-20"
+        ]
+      },
+      {
+        "id": "cust-graduation-anniversary",
+        "text": "毕业纪念日",
+        "date": "6,15",
+        "dateType": "SOLAR",
+        "emoji": "🎓",
+        "color": "#cc73e1",
+        "remark": "毕业周年聚会",
+        "dateArr": [
+          "2025-06-15"
+        ]
+      },
+      {
+        "id": "cust-book-release",
+        "text": "新书发布",
+        "date": "4,28",
+        "dateType": "SOLAR",
+        "emoji": "📖",
+        "color": "#52c41a",
+        "remark": "参与新书发布会",
+        "dateArr": [
+          "2025-04-28"
+        ]
+      },
+      {
+        "id": "cust-tech-conference",
+        "text": "技术大会",
+        "date": "11,28",
+        "dateType": "SOLAR",
+        "emoji": "💻",
+        "color": "#cc73e1",
+        "remark": "参加年度技术大会",
+        "dateArr": [
+          "2025-11-28"
+        ]
+      },
+      {
+        "id": "cust-family-photo-day",
+        "text": "家庭合影日",
+        "date": "2,8",
+        "dateType": "SOLAR",
+        "emoji": "📸",
+        "color": "#faad14",
+        "remark": "每年全家福拍摄",
+        "dateArr": [
+          "2025-02-08"
+        ]
+      },
+      {
+        "id": "cust-ski-trip",
+        "text": "滑雪之旅",
+        "date": "1,30",
+        "dateType": "SOLAR",
+        "emoji": "⛷️",
+        "color": "#40a9ff",
+        "remark": "冬季滑雪活动",
+        "dateArr": [
+          "2025-01-30"
+        ]
+      },
+      {
+        "id": "cust-cousins-gathering",
+        "text": "表亲聚会",
+        "date": "8,10",
+        "dateType": "SOLAR",
+        "emoji": "🍰",
+        "color": "#faad14",
+        "remark": "暑期家族聚会",
+        "dateArr": [
+          "2025-08-10"
+        ]
+      },
+      {
+        "id": "cust-marathon",
+        "text": "马拉松比赛",
+        "date": "3,30",
+        "dateType": "SOLAR",
+        "emoji": "🏅",
+        "color": "#65db39",
+        "remark": "城市马拉松参赛",
+        "dateArr": [
+          "2025-03-30"
+        ]
+      },
+      {
+        "id": "cust-parents-anniversary",
+        "text": "父母结婚纪念日",
+        "date": "9,18",
+        "dateType": "SOLAR",
+        "emoji": "💍",
+        "color": "#faad14",
+        "remark": "父母结婚纪念日",
+        "dateArr": [
+          "2025-09-18"
+        ]
+      },
+      {
+        "id": "cust-spring-cleaning",
+        "text": "春季大扫除",
+        "date": "3,10",
+        "dateType": "SOLAR",
+        "emoji": "🧹",
+        "color": "#52c41a",
+        "remark": "家庭卫生清理",
+        "dateArr": [
+          "2025-03-10"
+        ]
+      },
+      {
+        "id": "cust-annual-donation",
+        "text": "年度捐赠",
+        "date": "12,5",
+        "dateType": "SOLAR",
+        "emoji": "🎁",
+        "color": "#65db39",
+        "remark": "公益捐赠日",
+        "dateArr": [
+          "2025-12-05"
+        ]
+      },
+      {
+        "id": "cust-parents-checkup",
+        "text": "父母体检",
+        "date": "5,18",
+        "dateType": "SOLAR",
+        "emoji": "🩺",
+        "color": "#52c41a",
+        "remark": "父母年度健康检查",
+        "dateArr": [
+          "2025-05-18"
+        ]
+      },
+      {
+        "id": "cust-children-school-start",
+        "text": "开学日",
+        "date": "9,2",
+        "dateType": "SOLAR",
+        "emoji": "🎒",
+        "color": "#faad14",
+        "remark": "新学期开始",
+        "dateArr": [
+          "2025-09-02"
+        ]
+      },
+      {
+        "id": "cust-parents-travel",
+        "text": "父母旅行",
+        "date": "10,20",
+        "dateType": "SOLAR",
+        "emoji": "🧳",
+        "color": "#40a9ff",
+        "remark": "父母外出旅游",
+        "dateArr": [
+          "2025-10-20"
+        ]
+      },
+      {
+        "id": "cust-children-performance",
+        "text": "孩子演出",
+        "date": "6,12",
+        "dateType": "SOLAR",
+        "emoji": "🎤",
+        "color": "#faad14",
+        "remark": "学校文艺汇演",
+        "dateArr": [
+          "2025-06-12"
+        ]
+      },
+      {
+        "id": "cust-friend-wedding",
+        "text": "朋友婚礼",
+        "date": "5,25",
+        "dateType": "SOLAR",
+        "emoji": "💒",
+        "color": "#ff85c0",
+        "remark": "参加好友婚礼",
+        "dateArr": [
+          "2025-05-25"
+        ]
+      },
+      {
+        "id": "cust-annual-family-meeting",
+        "text": "家族年会",
+        "date": "2,2",
+        "dateType": "LUNAR",
+        "emoji": "👨‍👩‍👧‍👦",
+        "color": "#faad14",
+        "remark": "春节期间家族聚会",
+        "dateArr": [
+          "2025-03-01"
+        ]
+      },
+      {
+        "id": "cust-children-award",
+        "text": "孩子获奖",
+        "date": "11,20",
+        "dateType": "SOLAR",
+        "emoji": "🏅",
+        "color": "#faad14",
+        "remark": "孩子获得奖项",
+        "dateArr": [
+          "2025-11-20"
+        ]
+      },
+      {
+        "id": "cust-friend-birthday",
+        "text": "朋友生日",
+        "date": "7,28",
+        "dateType": "SOLAR",
+        "emoji": "🎂",
+        "color": "#ff85c0",
+        "remark": "好友生日聚会",
+        "dateArr": [
+          "2025-07-28"
+        ]
+      },
+      {
+        "id": "cust-children-graduation",
+        "text": "孩子毕业典礼",
+        "date": "7,5",
+        "dateType": "SOLAR",
+        "emoji": "🎓",
+        "color": "#faad14",
+        "remark": "孩子小学毕业",
+        "dateArr": [
+          "2025-07-05"
+        ]
+      },
+      {
+        "id": "cust-parents-festival-dinner",
+        "text": "父母节日聚餐",
+        "date": "5,12",
+        "dateType": "SOLAR",
+        "emoji": "🍲",
+        "color": "#faad14",
+        "remark": "母亲节家庭聚餐",
+        "dateArr": [
+          "2025-05-12"
+        ]
+      },
+      {
+        "id": "cust-children-competition",
+        "text": "孩子比赛",
+        "date": "10,8",
+        "dateType": "SOLAR",
+        "emoji": "🏆",
+        "color": "#faad14",
+        "remark": "孩子参加比赛",
+        "dateArr": [
+          "2025-10-08"
+        ]
+      },
+      {
+        "id": "cust-friend-reunion",
+        "text": "同学聚会",
+        "date": "8,18",
+        "dateType": "SOLAR",
+        "emoji": "🍻",
+        "color": "#ff85c0",
+        "remark": "老同学聚会",
+        "dateArr": [
+          "2025-08-18"
+        ]
+      },
+      {
+        "id": "cust-family-movie-night",
+        "text": "家庭观影",
+        "date": "12,20",
+        "dateType": "SOLAR",
+        "emoji": "🍿",
+        "color": "#faad14",
+        "remark": "全家一起看电影",
+        "dateArr": [
+          "2025-12-20"
+        ]
+      },
+      {
+        "id": "cust-children-sports-meet",
+        "text": "孩子运动会",
+        "date": "4,25",
+        "dateType": "SOLAR",
+        "emoji": "🏃‍♂️",
+        "color": "#faad14",
+        "remark": "学校运动会",
+        "dateArr": [
+          "2025-04-25"
+        ]
+      },
+      {
+        "id": "cust-family-barbecue",
+        "text": "家庭烧烤",
+        "date": "6,22",
+        "dateType": "SOLAR",
+        "emoji": "🍖",
+        "color": "#faad14",
+        "remark": "夏日家庭烧烤",
+        "dateArr": [
+          "2025-06-22"
+        ]
+      },
+      {
+        "id": "cust-friend-travel",
+        "text": "朋友结伴游",
+        "date": "9,25",
+        "dateType": "SOLAR",
+        "emoji": "✈️",
+        "color": "#ff85c0",
+        "remark": "好友结伴出游",
+        "dateArr": [
+          "2025-09-25"
+        ]
+      },
+      {
+        "id": "cust-family-picnic",
+        "text": "家庭野餐",
+        "date": "5,28",
+        "dateType": "SOLAR",
+        "emoji": "🥪",
+        "color": "#faad14",
+        "remark": "春末家庭野餐",
+        "dateArr": [
+          "2025-05-28"
+        ]
+      },
+      {
+        "id": "cust-family-game-night",
+        "text": "家庭游戏夜",
+        "date": "11,8",
+        "dateType": "SOLAR",
+        "emoji": "🎲",
+        "color": "#faad14",
+        "remark": "全家桌游之夜",
+        "dateArr": [
+          "2025-11-08"
+        ]
+      },
+      {
+        "id": "cust-family-cooking-day",
+        "text": "家庭烹饪日",
+        "date": "3,12",
+        "dateType": "SOLAR",
+        "emoji": "👩‍🍳",
+        "color": "#faad14",
+        "remark": "家庭一起做饭",
+        "dateArr": [
+          "2025-03-12"
+        ]
+      },
+      {
+        "id": "event-8aa35746",
+        "date": "2025,2,4",
+        "dateType": "SOLAR",
+        "text": "《丝之歌》发售（在梦里）",
+        "emoji": "🎮",
+        "color": "#FF2D55",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-02-04"
+        ]
+      },
+      {
+        "id": "event-054591e2",
+        "date": "2025,4,5",
+        "dateType": "SOLAR",
+        "text": "回家扫墓",
+        "emoji": "🪦",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-04-05"
+        ]
+      },
+      {
+        "id": "event-3201fa44",
+        "date": "2025,4,4",
+        "dateType": "SOLAR",
+        "text": "回家扫墓",
+        "emoji": "🪦",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-04-04"
+        ]
+      },
+      {
+        "id": "event-3e55d217",
+        "date": "2025,4,12",
+        "dateType": "SOLAR",
+        "text": "一起拍照！",
+        "emoji": "📷",
+        "color": "#f056c7",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-04-12"
+        ]
+      },
+      {
+        "id": "event-f02c69f8",
+        "date": "2025,1,4",
+        "dateType": "SOLAR",
+        "text": "年度总结和财务回顾",
+        "emoji": "🎯",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-01-04"
+        ]
+      },
+      {
+        "id": "event-108323d3",
+        "date": "2025,1,11",
+        "dateType": "SOLAR",
+        "text": "去海边旅行",
+        "emoji": "🏖️",
+        "color": "#FF2D55",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-01-11"
+        ]
+      },
+      {
+        "id": "event-f640fc0c",
+        "date": "2025,1,12",
+        "dateType": "SOLAR",
+        "text": "海边旅行 Day2",
+        "emoji": "🏖️",
+        "color": "#FF2D55",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-01-12"
+        ]
+      },
+      {
+        "id": "event-b657bb92",
+        "date": "2025,1,13",
+        "dateType": "SOLAR",
+        "text": "回去上班",
+        "emoji": "😭",
+        "color": "#CC73E1",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-01-13"
+        ]
+      },
+      {
+        "id": "event-44ecb0d0",
+        "date": "2025,2,6",
+        "dateType": "SOLAR",
+        "text": "项目截止日期",
+        "emoji": "💀",
+        "color": "#CC73E1",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-02-06"
+        ]
+      },
+      {
+        "id": "event-df4607d4",
+        "date": "2025,3,7",
+        "dateType": "SOLAR",
+        "text": "版本日计划",
+        "emoji": "💼",
+        "color": "#CC73E1",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-03-07"
+        ]
+      },
+      {
+        "id": "event-e967756d",
+        "date": "2025,4,5",
+        "dateType": "SOLAR",
+        "text": "顺道看看他",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-04-05"
+        ]
+      },
+      {
+        "id": "event-d030ae42",
+        "date": "2025,4,8",
+        "dateType": "SOLAR",
+        "text": "提醒爸妈体检！",
+        "emoji": "⏰",
+        "color": "#FFCC00",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-04-08"
+        ]
+      },
+      {
+        "id": "event-62bf6885",
+        "date": "2025,3,3",
+        "dateType": "SOLAR",
+        "text": "感冒很难受",
+        "emoji": "🤒",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-03-03"
+        ]
+      },
+      {
+        "id": "event-2351866d",
+        "date": "2025,6,14",
+        "dateType": "SOLAR",
+        "text": "朋友结婚",
+        "emoji": "💒",
+        "isRepeat": false,
+        "isHidden": false,
+        "dateArr": [
+          "2025-06-14"
+        ]
+      }
+    ]
   }
 }

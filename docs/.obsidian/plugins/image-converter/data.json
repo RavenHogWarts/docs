@@ -15,7 +15,7 @@
     {
       "name": "VitePublic",
       "type": "CUSTOM",
-      "customTemplate": "docs/public/images/doc/YG"
+      "customTemplate": "public/images/doc/YG"
     }
   ],
   "selectedFolderPreset": "VitePublic",
