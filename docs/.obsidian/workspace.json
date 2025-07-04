@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zhHans/index.md",
+                "file": "zhHans/obsidian-yearly-glance/setting/settings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "settings"
             }
           }
         ]
@@ -166,6 +166,17 @@
       "yearly-glance:打开年度概览": false
     }
   },
-  "active": "bde52d17987f1351",
-  "lastOpenFiles": []
+  "active": "185a1f2737d397ab",
+  "lastOpenFiles": [
+    "zhHans/obsidian-yearly-glance/setting/layout-settings.md",
+    "zhHans/obsidian-yearly-glance/setting/event-settings.md",
+    "zhHans/obsidian-yearly-glance/setting/color-settings.md",
+    "zhHans/obsidian-yearly-glance/guide/view.md",
+    "zhHans/obsidian-yearly-glance/setting/index.md",
+    "zhHans/obsidian-yearly-glance/advanced-usage/index.md",
+    "zhHans/obsidian-yearly-glance/about/index.md",
+    "zhHans/obsidian-yearly-glance/index.md",
+    "zhHans/obsidian-ravenhogwarts-toolkit/index.md",
+    "zhHans/index.md"
+  ]
 }
