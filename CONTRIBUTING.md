@@ -110,6 +110,11 @@ plugin-name/
   - (可安装 `vscode-paste-image` 和 `Markdown Link Updater` 插件，实现自动重命名和路径更新)
 - 由于 vitepress 的 `public` 目录会自动部署，在 `img` 组件中必须使用特殊的相对路径： `<ThemeImage lightSrc="/images/doc/plugin-name/screenshot.webp" />`
 
+5. 文件引用
+- 需要用 `/plugin-name/folder/file` 来引用
+- 例如：```请参考： “[事件管理](/obsidian-yearly-glance/guide/event)” 页面```
+- 如果使用相对路径引用，请不要带有后缀名，例如 `./event.md` 应写成 `./event`
+
 #### 内容组织规范
 1. 菜单折叠规范
 
@@ -279,6 +284,11 @@ The following files will be automatically excluded, no manual configuration need
 - Use relative paths for referencing: `![Screenshot](/images/plugin-name/screenshot.webp)`
   - (Recommended) Install `vscode-paste-image` and `Markdown Link Updater` plugins to automatically rename and update image paths.
 - Since vitepress's `public` directory will automatically deploy, in the `img` component, use a special relative path: `<ThemeImage lightSrc="/images/doc/plugin-name/screenshot.webp" />`
+
+5. File Reference
+- Use `/plugin-name/folder/file` to reference files.
+- For example: ```Please refer to: "[Event Management](/obsidian-yearly-glance/guide/event)" page```
+- If using relative paths, do not include the file extension, e.g. `./event.md` should be written as `./event`.
 
 #### Content Organization Standards
 1. Menu Collapse Standards

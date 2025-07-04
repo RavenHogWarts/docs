@@ -1,6 +1,6 @@
 ---
 title: 基础设置
-order: 1
+order: 2
 draft: false
 ---
 

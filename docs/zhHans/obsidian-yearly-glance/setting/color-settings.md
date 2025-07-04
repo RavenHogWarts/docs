@@ -1,10 +1,10 @@
 ---
-title: 颜色设置
-order: 4
+title: 颜色预设
+order: 13
 draft: false
 ---
 
-# 颜色设置
+# 颜色预设
 
 Yearly Glance 支持丰富的颜色自定义，让你的日历更具个性。
 
