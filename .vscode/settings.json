@@ -1,8 +1,4 @@
 {
-  "pasteImage.path": "${projectRoot}/docs/public/images/doc/",
-  "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
-  "pasteImage.insertPattern": "![${imageFileName}](${imageFilePath})",
-  "pasteImage.showFilePathConfirmInputBox": false,
   "markdownLinkUpdater.exclude": ["**/node_modules/**"],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
@@ -11,4 +7,7 @@
   "files.exclude": {
     "**/cache": true
   },
+  "markdown.copyFiles.destination": {
+    "**/docs/**/*.md": "${documentWorkspaceFolder}/docs/public/images/doc/${fileName}"
+  }
 }
