@@ -107,7 +107,7 @@ plugin-name/
 - 统一存放在 `docs/public/images/doc/{plugin shortname}` 目录下
 - 图片文件名应简洁明了，避免使用复杂的标题
 - 图片使用相对路径： `![截图](../../public/images/doc/plugin-name/screenshot.webp)` 
-  - (可安装 `vscode-paste-image` 和 `Markdown Link Updater` 插件，实现自动重命名和路径更新)
+  - (可安装 `Markdown Link Updater` 插件，实现自动重命名和路径更新)
 - 由于 vitepress 的 `public` 目录会自动部署，在 `img` 组件中必须使用特殊的相对路径： `<ThemeImage lightSrc="/images/doc/plugin-name/screenshot.webp" />`
 
 5. 文件引用
@@ -277,12 +277,12 @@ The following files will be automatically excluded, no manual configuration need
 - Link text should be concise and clear, avoid using complex titles.
 - Links should be consistent to avoid changes during document migration.
 
-1. Image Resources
+4. Image Resources
 - Use `.webp` format for image files whenever possible.
 - Store all images in the `docs/public/images/doc/{plugin shortname}` directory.
 - Image filenames should be concise and clear.
 - Use relative paths for referencing: `![Screenshot](/images/plugin-name/screenshot.webp)`
-  - (Recommended) Install `vscode-paste-image` and `Markdown Link Updater` plugins to automatically rename and update image paths.
+  - (Recommended) Install `Markdown Link Updater` plugins to automatically rename and update image paths.
 - Since vitepress's `public` directory will automatically deploy, in the `img` component, use a special relative path: `<ThemeImage lightSrc="/images/doc/plugin-name/screenshot.webp" />`
 
 5. File Reference
