@@ -1,0 +1,894 @@
+{
+  "config": {
+    "year": 2025,
+    "layout": "2x6",
+    "viewType": "list",
+    "showWeekdays": true,
+    "highlightToday": true,
+    "highlightWeekends": true,
+    "showLegend": true,
+    "limitListHeight": false,
+    "eventFontSize": "medium",
+    "showHolidays": true,
+    "showBirthdays": true,
+    "showCustomEvents": true,
+    "mondayFirst": true,
+    "title": "",
+    "showTooltips": true,
+    "colorful": false
+  },
+  "data": {
+    "holidays": [
+      {
+        "text": "元旦",
+        "date": "1,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🎊",
+        "color": "#ff7875",
+        "remark": "新年的第一天",
+        "dateObj": "2025-01-01"
+      },
+      {
+        "text": "情人节",
+        "date": "2,14",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "💝",
+        "color": "#ff85c0",
+        "remark": "浪漫的日子",
+        "dateObj": "2025-02-14"
+      },
+      {
+        "text": "妇女节",
+        "date": "3,8",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "👩",
+        "color": "#ff7875",
+        "remark": "国际劳动妇女节",
+        "dateObj": "2025-03-08"
+      },
+      {
+        "text": "植树节",
+        "date": "3,12",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🌳",
+        "color": "#52c41a",
+        "remark": "保护环境，绿化地球",
+        "dateObj": "2025-03-12"
+      },
+      {
+        "text": "愚人节",
+        "date": "4,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🃏",
+        "color": "#ff7875",
+        "remark": "别被骗了！",
+        "dateObj": "2025-04-01"
+      },
+      {
+        "text": "劳动节",
+        "date": "5,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "👷",
+        "color": "#ff7875",
+        "remark": "国际劳动节",
+        "dateObj": "2025-05-01"
+      },
+      {
+        "text": "青年节",
+        "date": "5,4",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "👦",
+        "color": "#ff7875",
+        "remark": "五四青年节",
+        "dateObj": "2025-05-04"
+      },
+      {
+        "text": "儿童节",
+        "date": "6,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "👶",
+        "color": "#ff7875",
+        "remark": "国际儿童节",
+        "dateObj": "2025-06-01"
+      },
+      {
+        "text": "建党节",
+        "date": "7,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🎖️",
+        "color": "#f5222d",
+        "remark": "中国共产党成立纪念日",
+        "dateObj": "2025-07-01"
+      },
+      {
+        "text": "建军节",
+        "date": "8,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🎖️",
+        "color": "#f5222d",
+        "remark": "中国人民解放军成立纪念日",
+        "dateObj": "2025-08-01"
+      },
+      {
+        "text": "教师节",
+        "date": "9,10",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "👨‍🏫",
+        "color": "#ff7875",
+        "remark": "尊师重道",
+        "dateObj": "2025-09-10"
+      },
+      {
+        "text": "国庆节",
+        "date": "10,1",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🎉",
+        "color": "#f5222d",
+        "remark": "中华人民共和国国庆节",
+        "dateObj": "2025-10-01"
+      },
+      {
+        "text": "万圣节",
+        "date": "10,31",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🎃",
+        "color": "#fa8c16",
+        "remark": "不给糖就捣蛋",
+        "dateObj": "2025-10-31"
+      },
+      {
+        "text": "圣诞节",
+        "date": "12,25",
+        "dateType": "SOLAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🎄",
+        "color": "#ff4d4f",
+        "remark": "圣诞老人要来啦",
+        "dateObj": "2025-12-25"
+      },
+      {
+        "text": "春节",
+        "date": "1,1",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🧨",
+        "color": "#f5222d",
+        "remark": "农历新年",
+        "dateObj": "2025-01-29"
+      },
+      {
+        "text": "元宵节",
+        "date": "1,15",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🏮",
+        "color": "#fa8c16",
+        "remark": "正月十五闹元宵",
+        "dateObj": "2025-02-12"
+      },
+      {
+        "text": "端午节",
+        "date": "5,5",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🐉",
+        "color": "#ff7875",
+        "remark": "吃粽子，赛龙舟",
+        "dateObj": "2025-05-31"
+      },
+      {
+        "text": "七夕节",
+        "date": "7,7",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🌌",
+        "color": "#722ed1",
+        "remark": "牛郎织女相会",
+        "dateObj": "2025-08-29"
+      },
+      {
+        "text": "中元节",
+        "date": "7,15",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "👻",
+        "color": "#8c8c8c",
+        "remark": "鬼节",
+        "dateObj": "2025-09-06"
+      },
+      {
+        "text": "中秋节",
+        "date": "8,15",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🥮",
+        "color": "#faad14",
+        "remark": "人月两团圆",
+        "dateObj": "2025-10-06"
+      },
+      {
+        "text": "重阳节",
+        "date": "9,9",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🍊",
+        "color": "#ffc53d",
+        "remark": "敬老爱老",
+        "dateObj": "2025-10-29"
+      },
+      {
+        "text": "腊八节",
+        "date": "12,8",
+        "dateType": "LUNAR",
+        "type": "INTERNAT",
+        "isShow": true,
+        "emoji": "🥣",
+        "color": "#ff7875",
+        "remark": "腊八粥",
+        "dateObj": "2026-01-26"
+      },
+      {
+        "date": "2025,1,28",
+        "dateType": "SOLAR",
+        "text": "除夕",
+        "emoji": "🎉",
+        "color": "#ff7875",
+        "type": "CUSTOM",
+        "isShow": true,
+        "dateObj": "2025-01-28"
+      },
+      {
+        "date": "2025,4,5",
+        "dateType": "SOLAR",
+        "text": "清明节",
+        "emoji": "🪦",
+        "color": "#ff7875",
+        "type": "CUSTOM",
+        "isShow": true,
+        "dateObj": "2025-04-05"
+      },
+      {
+        "date": "5,11",
+        "dateType": "SOLAR",
+        "text": "认识的纪念日",
+        "emoji": "🎉",
+        "color": "#ff7875",
+        "type": "CUSTOM",
+        "isShow": true,
+        "dateObj": "2025-05-11"
+      }
+    ],
+    "birthdays": [
+      {
+        "date": "1,15",
+        "dateType": "SOLAR",
+        "text": "小夏生日",
+        "emoji": "🎂",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-01-15",
+        "age": "_需补全年份数据_",
+        "animal": "_需补全年份数据_",
+        "ziac": "_需补全年份数据_",
+        "dateObj": "2025-01-15",
+        "zodiac": "_需补全年份数据_"
+      },
+      {
+        "date": "1998,2,14",
+        "dateType": "SOLAR",
+        "text": "情人节特别生日",
+        "emoji": "💝",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-02-14",
+        "age": 27,
+        "animal": "虎",
+        "zodiac": "水瓶",
+        "dateObj": "2025-02-14"
+      },
+      {
+        "date": "3,22",
+        "dateType": "SOLAR",
+        "text": "星尘生日",
+        "emoji": "🎂",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-03-22",
+        "age": "_需补全年份数据_",
+        "animal": "_需补全年份数据_",
+        "zodiac": "_需补全年份数据_",
+        "dateObj": "2025-03-22"
+      },
+      {
+        "date": "2025,2,6",
+        "dateType": "SOLAR",
+        "text": "小杰生日",
+        "emoji": "🎂",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-02-06",
+        "age": 0,
+        "animal": "蛇",
+        "zodiac": "水瓶",
+        "dateObj": "2025-02-06"
+      },
+      {
+        "date": "5,8",
+        "dateType": "SOLAR",
+        "text": "卡卡生日",
+        "emoji": "🎂",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-05-08",
+        "age": "_需补全年份数据_",
+        "animal": "_需补全年份数据_",
+        "zodiac": "_需补全年份数据_",
+        "dateObj": "2025-05-08"
+      },
+      {
+        "date": "5,14",
+        "dateType": "SOLAR",
+        "text": "妈妈生日",
+        "emoji": "🎂",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-05-14",
+        "age": "_需补全年份数据_",
+        "animal": "_需补全年份数据_",
+        "zodiac": "_需补全年份数据_",
+        "dateObj": "2025-05-14"
+      },
+      {
+        "date": "6,10",
+        "dateType": "SOLAR",
+        "text": "爸爸生日",
+        "emoji": "🎂",
+        "color": "#fa8c16",
+        "nextBirthday": "2026-06-10",
+        "age": "_需补全年份数据_",
+        "animal": "_需补全年份数据_",
+        "zodiac": "_需补全年份数据_",
+        "dateObj": "2025-06-10"
+      }
+    ],
+    "customEvents": [
+      {
+        "date": "2025,01,01",
+        "dateType": "SOLAR",
+        "text": "新年晨跑计划",
+        "emoji": "🏃",
+        "color": "#36cfc9",
+        "isRepeat": false,
+        "dateObj": "2025-01-01"
+      },
+      {
+        "date": "2025,01,10",
+        "dateType": "SOLAR",
+        "text": "团队年度规划会",
+        "emoji": "📊",
+        "color": "#597ef7",
+        "remark": "需准备PPT",
+        "isRepeat": false,
+        "dateObj": "2025-01-10"
+      },
+      {
+        "date": "2025,02,08",
+        "dateType": "SOLAR",
+        "text": "春节家宴采购",
+        "emoji": "🛒",
+        "color": "#ff4d4f",
+        "isRepeat": false,
+        "dateObj": "2025-02-08"
+      },
+      {
+        "date": "2025,03,12",
+        "dateType": "SOLAR",
+        "text": "植树节活动",
+        "emoji": "🌳",
+        "color": "#73d13d",
+        "isRepeat": true,
+        "dateObj": "2025-03-12"
+      },
+      {
+        "date": "2025,04,22",
+        "dateType": "SOLAR",
+        "text": "地球日研讨会",
+        "emoji": "🌍",
+        "color": "#389e0d",
+        "isRepeat": false,
+        "dateObj": "2025-04-22"
+      },
+      {
+        "date": "2025,05,20",
+        "dateType": "SOLAR",
+        "text": "产品发布会直播",
+        "emoji": "📱",
+        "color": "#9254de",
+        "remark": "新一代旗舰机亮相",
+        "isRepeat": false,
+        "dateObj": "2025-05-20"
+      },
+      {
+        "date": "2025,06,21",
+        "dateType": "SOLAR",
+        "text": "夏至音乐节",
+        "emoji": "🎵",
+        "color": "#ff7a45",
+        "isRepeat": false,
+        "dateObj": "2025-06-21"
+      },
+      {
+        "date": "2025,07,15",
+        "dateType": "SOLAR",
+        "text": "海岛度假开始",
+        "emoji": "🏖️",
+        "color": "#36cfc9",
+        "remark": "航班：MU123 08:00",
+        "isRepeat": false,
+        "dateObj": "2025-07-15"
+      },
+      {
+        "date": "2025,08,08",
+        "dateType": "SOLAR",
+        "text": "奥运会开幕式",
+        "emoji": "🎆",
+        "color": "#ff4d4f",
+        "isRepeat": false,
+        "dateObj": "2025-08-08"
+      },
+      {
+        "date": "2025,09,10",
+        "dateType": "SOLAR",
+        "text": "教师节礼物派送",
+        "emoji": "🎁",
+        "color": "#597ef7",
+        "isRepeat": true,
+        "dateObj": "2025-09-10"
+      },
+      {
+        "date": "2025,10,24",
+        "dateType": "SOLAR",
+        "text": "开发者大会",
+        "emoji": "👨💻",
+        "color": "#9254de",
+        "remark": "Keynote 10:00 AM",
+        "isRepeat": false,
+        "dateObj": "2025-10-24"
+      },
+      {
+        "date": "2025,11,11",
+        "dateType": "SOLAR",
+        "text": "年度大促监控",
+        "emoji": "📉",
+        "color": "#ff7a45",
+        "isRepeat": false,
+        "dateObj": "2025-11-11"
+      },
+      {
+        "date": "2025,12,24",
+        "dateType": "SOLAR",
+        "text": "平安夜派对",
+        "emoji": "🎄",
+        "color": "#389e0d",
+        "isRepeat": false,
+        "dateObj": "2025-12-24"
+      },
+      {
+        "date": "2025,01,01",
+        "dateType": "SOLAR",
+        "text": "跨年目标启动",
+        "emoji": "🚀",
+        "color": "#ff4d4f",
+        "remark": "晨间冥想+年度计划表",
+        "isRepeat": false,
+        "dateObj": "2025-01-01"
+      },
+      {
+        "date": "2025,01,15",
+        "dateType": "SOLAR",
+        "text": "开发者峰会 Keynote",
+        "emoji": "💻",
+        "color": "#597ef7",
+        "remark": "带 M3 Max 设备演示",
+        "isRepeat": false,
+        "dateObj": "2025-01-15"
+      },
+      {
+        "date": "2025,02,14",
+        "dateType": "SOLAR",
+        "text": "限定版 AirPods 发售",
+        "emoji": "🎧",
+        "color": "#9254de",
+        "remark": "红色情人节特别款",
+        "isRepeat": false,
+        "dateObj": "2025-02-14"
+      },
+      {
+        "date": "2025,02,28",
+        "dateType": "SOLAR",
+        "text": "冬季产品线清仓",
+        "emoji": "🛍️",
+        "color": "#ff7a45",
+        "remark": "官网&直营店同步",
+        "isRepeat": false,
+        "dateObj": "2025-02-28"
+      },
+      {
+        "date": "2025,03,08",
+        "dateType": "SOLAR",
+        "text": "Watch 健身挑战截止",
+        "emoji": "🏅",
+        "color": "#36cfc9",
+        "remark": "领取限定奖章",
+        "isRepeat": false,
+        "dateObj": "2025-03-08"
+      },
+      {
+        "date": "2025,03,20",
+        "dateType": "SOLAR",
+        "text": "春季发布会彩排",
+        "emoji": "🎪",
+        "color": "#ff4d4f",
+        "remark": "AR 眼镜最终测试",
+        "isRepeat": false,
+        "dateObj": "2025-03-20"
+      },
+      {
+        "date": "2025,04,11",
+        "dateType": "SOLAR",
+        "text": "iOS 19 原型机交付",
+        "emoji": "📱",
+        "color": "#597ef7",
+        "remark": "保密级别：Titanium",
+        "isRepeat": false,
+        "dateObj": "2025-04-11"
+      },
+      {
+        "date": "2025,04,22",
+        "dateType": "SOLAR",
+        "text": "碳中和进度审计",
+        "emoji": "🌱",
+        "color": "#73d13d",
+        "remark": "供应商同步会议",
+        "isRepeat": true,
+        "dateObj": "2025-04-22"
+      },
+      {
+        "date": "2025,05,01",
+        "dateType": "SOLAR",
+        "text": "Apple Park 开放日",
+        "emoji": "🍎",
+        "color": "#ff4d4f",
+        "remark": "需提前预约导览",
+        "isRepeat": true,
+        "dateObj": "2025-05-01"
+      },
+      {
+        "date": "2025,05,19",
+        "dateType": "SOLAR",
+        "text": "WWDC 彩蛋揭晓",
+        "emoji": "🥚",
+        "color": "#9254de",
+        "remark": "隐藏功能预告",
+        "isRepeat": false,
+        "dateObj": "2025-05-19"
+      },
+      {
+        "date": "2025,06,05",
+        "dateType": "SOLAR",
+        "text": "Vision Pro 2 预售",
+        "emoji": "👓",
+        "color": "#597ef7",
+        "remark": "全息显示升级版",
+        "isRepeat": false,
+        "dateObj": "2025-06-05"
+      },
+      {
+        "date": "2025,06,21",
+        "dateType": "SOLAR",
+        "text": "太阳能农场启用",
+        "emoji": "☀️",
+        "color": "#ffd666",
+        "remark": "内华达州基地",
+        "isRepeat": false,
+        "dateObj": "2025-06-21"
+      },
+      {
+        "date": "2025,01,18",
+        "dateType": "SOLAR",
+        "text": "家庭火锅日",
+        "emoji": "🏠",
+        "color": "#ffd8bf",
+        "remark": "采购清单：羊肉/毛肚/竹荪",
+        "isRepeat": false,
+        "dateObj": "2025-01-18"
+      },
+      {
+        "date": "2025,02,09",
+        "dateType": "SOLAR",
+        "text": "春节守岁",
+        "emoji": "🏮",
+        "color": "#ff4d4f",
+        "remark": "23:00 全家视频连线",
+        "isRepeat": true,
+        "dateObj": "2025-02-09"
+      },
+      {
+        "date": "2025,03,15",
+        "dateType": "SOLAR",
+        "text": "给妈妈换手机",
+        "emoji": "📱",
+        "color": "#b37feb",
+        "remark": "iPhone 17 Plus 远峰蓝",
+        "isRepeat": false,
+        "dateObj": "2025-03-15"
+      },
+      {
+        "date": "2025,04,04",
+        "dateType": "SOLAR",
+        "text": "苏州踏青一日游",
+        "emoji": "🚄",
+        "color": "#73d13d",
+        "remark": "高铁G123 07:35 上海站",
+        "isRepeat": false,
+        "dateObj": "2025-04-04"
+      },
+      {
+        "date": "2025,05,02",
+        "dateType": "SOLAR",
+        "text": "千岛湖自驾游",
+        "emoji": "🚗",
+        "color": "#36cfc9",
+        "remark": "租车：特斯拉Model Z",
+        "isRepeat": false,
+        "dateObj": "2025-05-02"
+      },
+      {
+        "date": "2025,05,03",
+        "dateType": "SOLAR",
+        "text": "千岛湖自驾游 Day2",
+        "emoji": "🚗",
+        "color": "#36cfc9",
+        "remark": "租车：特斯拉Model Z",
+        "isRepeat": false,
+        "dateObj": "2025-05-03"
+      },
+      {
+        "date": "2025,05,04",
+        "dateType": "SOLAR",
+        "text": "千岛湖自驾游 Day3",
+        "emoji": "🚗",
+        "color": "#36cfc9",
+        "remark": "租车：特斯拉Model Z",
+        "isRepeat": false,
+        "dateObj": "2025-05-04"
+      },
+      {
+        "date": "2025,06,14",
+        "dateType": "SOLAR",
+        "text": "迪士尼夏日限定",
+        "emoji": "🏰",
+        "color": "#ff85c0",
+        "remark": "需提前抢快速通道",
+        "isRepeat": false,
+        "dateObj": "2025-06-14"
+      },
+      {
+        "date": "2025,05,11",
+        "dateType": "SOLAR",
+        "text": "一起去吃豪华大餐",
+        "emoji": "🥘",
+        "color": "#ff85c0",
+        "remark": "需提前抢快速通道",
+        "isRepeat": false,
+        "dateObj": "2025-05-11"
+      },
+      {
+        "date": "2025,01,25",
+        "dateType": "SOLAR",
+        "text": "《流浪地球3》IMAX",
+        "emoji": "🎬",
+        "color": "#597ef7",
+        "remark": "20:00 寰映影城巨幕厅",
+        "isRepeat": false,
+        "dateObj": "2025-01-25"
+      },
+      {
+        "date": "2025,03,08",
+        "dateType": "SOLAR",
+        "text": "宫崎骏重映特典",
+        "emoji": "🎞️",
+        "color": "#87e8de",
+        "remark": "《幽灵公主》4K修复版",
+        "isRepeat": false,
+        "dateObj": "2025-03-08"
+      },
+      {
+        "date": "2025,05,16",
+        "dateType": "SOLAR",
+        "text": "电影《旺卡》",
+        "emoji": "🎥",
+        "color": "#ff7a45",
+        "remark": "主创见面会场次",
+        "isRepeat": false,
+        "dateObj": "2025-05-16"
+      },
+      {
+        "date": "2025,02,22",
+        "dateType": "SOLAR",
+        "text": "年度深度体检",
+        "emoji": "🩺",
+        "color": "#36cfc9",
+        "remark": "空腹/带既往报告",
+        "isRepeat": true,
+        "dateObj": "2025-02-22"
+      },
+      {
+        "date": "2025,04,18",
+        "dateType": "SOLAR",
+        "text": "牙齿矫正复诊",
+        "emoji": "🦷",
+        "color": "#bae637",
+        "remark": "调整第7次钢丝",
+        "isRepeat": false,
+        "dateObj": "2025-04-18"
+      },
+      {
+        "date": "2025,06,07",
+        "dateType": "SOLAR",
+        "text": "马拉松训练计划启动",
+        "emoji": "🏃",
+        "color": "#ff4d4f",
+        "remark": "目标：半马2小时内",
+        "isRepeat": false,
+        "dateObj": "2025-06-07"
+      },
+      {
+        "date": "2025,01,11",
+        "dateType": "SOLAR",
+        "text": "大学室友聚会",
+        "emoji": "🎮",
+        "color": "#9254de",
+        "remark": "Switch 马里奥派对局",
+        "isRepeat": false,
+        "dateObj": "2025-01-11"
+      },
+      {
+        "date": "2025,03,28",
+        "dateType": "SOLAR",
+        "text": "摄影外拍活动",
+        "emoji": "📸",
+        "color": "#ff85c0",
+        "remark": "辰山植物园樱花季",
+        "isRepeat": false,
+        "dateObj": "2025-03-28"
+      },
+      {
+        "date": "2025,05,24",
+        "dateType": "SOLAR",
+        "text": "剧本杀《赛博谜城》",
+        "emoji": "🔍",
+        "color": "#ffd666",
+        "remark": "8人硬核推理本",
+        "isRepeat": false,
+        "dateObj": "2025-05-24"
+      },
+      {
+        "date": "2025,03,4",
+        "dateType": "SOLAR",
+        "text": "猫咪年度疫苗",
+        "emoji": "🐱",
+        "color": "#ffccc7",
+        "remark": "记得带免疫证",
+        "isRepeat": true,
+        "dateObj": "2025-03-04"
+      },
+      {
+        "date": "2025,04,12",
+        "dateType": "SOLAR",
+        "text": "狗狗美容SPA",
+        "emoji": "🐶",
+        "color": "#ffd8bf",
+        "remark": "约克夏剪毛+指甲护理",
+        "isRepeat": false,
+        "dateObj": "2025-04-12"
+      },
+      {
+        "date": "2025,01,20",
+        "dateType": "SOLAR",
+        "text": "结婚5周年纪念",
+        "emoji": "💍",
+        "color": "#ff85c0",
+        "remark": "预定外滩法餐厅",
+        "isRepeat": true,
+        "dateObj": "2025-01-20"
+      },
+      {
+        "date": "2025,03,18",
+        "dateType": "SOLAR",
+        "text": "入职10周年",
+        "emoji": "💼",
+        "color": "#597ef7",
+        "remark": "领取定制纪念徽章",
+        "isRepeat": false,
+        "dateObj": "2025-03-18"
+      },
+      {
+        "date": "2025,04,25",
+        "dateType": "SOLAR",
+        "text": "Python大师课",
+        "emoji": "🐍",
+        "color": "#389e0d",
+        "remark": "19:00 线上直播",
+        "isRepeat": false,
+        "dateObj": "2025-04-25"
+      },
+      {
+        "date": "2025,06,15",
+        "dateType": "SOLAR",
+        "text": "日语N2考试",
+        "emoji": "📚",
+        "color": "#36cfc9",
+        "remark": "考点：上海外国语大学",
+        "isRepeat": false,
+        "dateObj": "2025-06-15"
+      },
+      {
+        "date": "6,20",
+        "dateType": "SOLAR",
+        "text": "游戏《Deltarune》发售！",
+        "emoji": "🎮",
+        "color": "#73d13d",
+        "isRepeat": false,
+        "dateObj": "2025-06-20"
+      },
+      {
+        "date": "2,2",
+        "dateType": "SOLAR",
+        "text": "电影《去他妈的多元宇宙》",
+        "emoji": "🥯",
+        "color": "#c03dd1",
+        "isRepeat": false,
+        "dateObj": "2025-02-02"
+      },
+      {
+        "date": "6,5",
+        "dateType": "SOLAR",
+        "text": "游戏《Deltarune》发售",
+        "emoji": "🎮",
+        "color": "#d1533d",
+        "remark": "三角符文都来了，那么《丝之鸽》呢……",
+        "isRepeat": false,
+        "dateObj": "2025-06-05"
+      }
+    ]
+  }
+}
