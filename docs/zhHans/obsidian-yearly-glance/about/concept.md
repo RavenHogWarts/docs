@@ -23,7 +23,11 @@ Yearly Glance 的设计初衷是为 Obsidian 用户提供一个可视化、可�
 
 ## 非目标
 
-- 插件并非传统日历或提醒工具，不提供闹钟/推送等强提醒功能。
+- 插件**并非**传统日历或提醒工具，不提供闹钟/推送等强提醒功能。
+	- 这也是由于 Obsidian 本身没有一个很好的消息提示支持。
 - 主要用于纵览和管理，而非日常待办事项。
+	- 对于待办需求，更推荐 [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) 或是 [Task Genius](https://github.com/Quorafind/Obsidian-Task-Genius) 插件
 
-> 你可以根据自己的需求灵活使用插件，打造专属的年度视图。
+  
+> 当然，你可以根据自己的需求灵活使用插件，打造专属的年度视图。  
+> 希望这个插件能为你的生活增加一些乐趣，提供一些帮助。
