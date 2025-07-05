@@ -11,7 +11,11 @@ Obsidian 插件，提供可视化且可自定义的年度事件概览，帮助�
 
 从这里开始，您将获得一眼纵览全年的能力！
 
-![](../../public/images/doc/YG/overview-zh.webp)
+<ThemeImage
+	lightSrc="/images/doc/YG/YG-banner-zh-light.webp"
+	darkSrc="/images/doc/YG/YG-banner-zh-dark.webp"
+	alt="Yearly Glance Banner"
+/>
 
 ## 主要亮点
 
