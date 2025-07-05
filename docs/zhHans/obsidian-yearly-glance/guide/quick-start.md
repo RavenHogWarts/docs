@@ -21,7 +21,7 @@ draft: false
 - 在左侧功能区点击“打开年度概览”按钮，即可进入年历视图。
 - 首次打开会自动加载内置节假日和示例事件。
 
-![ribbon](/images/doc/YG/ribbon-zh.png)
+![ribbon](../../../public/images/doc/YG/ribbon-zh.webp)
 
 ## 创建事件
 
@@ -29,7 +29,7 @@ draft: false
 2. 选择“添加事件”，填写事件信息后保存。
 3. 新事件会立即显示在对应日期。
 
-![create-event](/images/doc/YG/create-event-zh.png)
+![create-event](../../../public/images/doc/YG/create-event-zh.webp)
 
 ## 查看和编辑事件
 
