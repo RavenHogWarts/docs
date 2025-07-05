@@ -1,6 +1,6 @@
 ---
-title: 样式代码片段管理
-order: 2
+title: obsidian 样式片段管理
+order: 5
 draft: false
 ---
 
