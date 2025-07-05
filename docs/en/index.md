@@ -8,7 +8,7 @@ hero:
   text: Explore, Learn, Create
   tagline: Comprehensive tutorials and guides for plugins, software and utilities developed by RavenHogwarts
   image:
-    src: /images/avatar/logo.png
+    src: /images/avatar/logo.webp
     alt: Vitest
   actions:
     - theme: alt
