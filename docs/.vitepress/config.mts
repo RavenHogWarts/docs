@@ -100,7 +100,8 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
         documentRootPath: `docs/${lang}`,
         scanStartPath: pluginDir,
         resolvePath: defaultLocale === lang ? `/${pluginDir}/` : `/${lang}/${pluginDir}/`,
-        ...(defaultLocale === lang ? {} : { basePath: `/${lang}/` }),
+        // 修复：basePath 应该与 resolvePath 保持一致
+        ...(defaultLocale === lang ? {} : { basePath: `/${lang}/${pluginDir}/` }),
         // 合并排除模式和手动排序配置
         excludePattern: customConfig.excludePattern ?? commonSidebarConfig.excludePattern,
         manualSortFileNameByPriority: customConfig.manualSortFileNameByPriority ?? commonSidebarConfig.manualSortFileNameByPriority
