@@ -34,7 +34,7 @@ hero:
           icon: 'CodeXml',
           title: 'Ace Code Editor',
           description: 'Edit code files directly using the Ace editor',
-          link: '/obsidian-ace-code-editor/'
+          link: '/en/obsidian-ace-code-editor/'
         },
         {
           icon: 'Telescope',
