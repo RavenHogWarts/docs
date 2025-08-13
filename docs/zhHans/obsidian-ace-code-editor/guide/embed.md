@@ -5,13 +5,13 @@ order: 4
 
 # 在 markdown 文件中嵌入代码文件
 
-在 obsidian 中可以使用 wiki 双链语法（`![[]]`）来嵌入其他文件，依据这一特性我们可以在 markdown 文件中渲染出代码文件内容
+在 Obsidian 中可以使用 wiki 双链语法（`![[]]`）来嵌入其他文件，依据这一特性我们可以在 markdown 文件中渲染出代码文件内容
 
 ![alt text](../../../public/images/doc/ACE/embed.webp)
 
 ## 使用前提
 
-- obsidian 设置中 `文件与链接 -> 使用 Wiki 链接` 功能需开启
+- Obsidian 设置中 `文件与链接 -> 使用 Wiki 链接` 功能需开启
 - 在插件设置 `会话 -> 注册文件类型` 中必须有需要嵌入的代码文件的类型
 
 ## 带行号范围的文件引用
