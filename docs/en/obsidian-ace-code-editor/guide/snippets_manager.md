@@ -14,7 +14,7 @@ The Ace Code Editor plugin provides convenient CSS snippets management functiona
 
 The plugin adds a management entry icon to the leftmost ribbon by default, with the default icon being <LucideIcon name="Code" class="inline-icon"/>
 
-![](../../../public/images/doc/ACE/snippets-manager-zh.webp)
+![](../../../public/images/doc/ACE/snippets-manager-en.webp)
 
 ### Opening Methods
 
@@ -105,7 +105,7 @@ The plugin adds a management entry icon to the leftmost ribbon by default, with 
 **Editor Won't Open**
 - Restart Obsidian
 - Check if the plugin is properly enabled
-- Check console for error messages
+- Open Developer Tools with `Ctrl+Shift+I` (or `Cmd+Option+I` on Mac), then check the Console tab for error messages
 
 **Style Conflicts**
 - Use more specific selectors
