@@ -48,6 +48,18 @@ hero:
           link: '/obsidian-custom-icons/'
         },
       ]
+    },
+    {
+      icon: 'Wrench',
+      title: '实用小工具',
+      items: [
+        {
+          icon: 'FolderOpen',
+          title: 'Obsidian 文件夹打开器',
+          description: 'Windows 中右键使用 Obsidian 将文件夹作为库打开',
+          link: '/open-folder-with-obsidian/'
+        }
+      ]
     }
   ]
 </script>
