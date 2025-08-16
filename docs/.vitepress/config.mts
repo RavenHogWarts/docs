@@ -25,7 +25,6 @@ console.log('VITE_BASE_URL:', VITE_BASE_URL)
 
 import { existsSync } from 'fs';
 import { join } from 'path';
-import { text } from 'stream/consumers';
 
 const defaultLocale: string = 'zhHans';
 const supportLocales: string[] = [defaultLocale, 'en'];
