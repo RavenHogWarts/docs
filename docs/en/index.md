@@ -49,6 +49,18 @@ hero:
           link: '/obsidian-custom-icons/'
         },
       ]
+    },
+    {
+      icon: 'Wrench',
+      title: 'Utilities',
+      items: [
+        {
+          icon: 'FolderOpen',
+          title: 'Obsidian Folder Opener',
+          description: 'Right-click to open folders as Obsidian vaults in Windows',
+          link: '/open-folder-with-obsidian/'
+        }
+      ]
     }
   ]
 </script>
