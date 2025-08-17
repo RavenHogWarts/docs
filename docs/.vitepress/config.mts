@@ -62,7 +62,7 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
       'obsidian-custom-icons', 
       'obsidian-ravenhogwarts-toolkit',
       'obsidian-yearly-glance',
-      'open-folder-with-obsidian'
+      'obsidian-folder-opener'
     ];
     
     // 插件自定义配置
@@ -132,7 +132,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
         },
         { text: '实用小工具',
           items: [
-            { text: 'Open Folder with Obsidian', link: '/open-folder-with-obsidian/' },
+            { text: 'Obsidian文件夹打开器', link: '/obsidian-folder-opener/' },
           ]
         },
         { text: `VitePress ${pkg.version}`, link: 'https://vitepress.dev/zh/', noIcon: true },
@@ -200,7 +200,7 @@ const vitePressI18nConfig: VitePressI18nOptions = {
         },
         { text: 'Utilities',
           items: [
-            { text: 'Open Folder with Obsidian', link: '/en/open-folder-with-obsidian/' },
+            { text: 'obsidian-folder-opener', link: '/en/obsidian-folder-opener/' },
           ]
         },
         { text: `VitePress ${pkg.version}`, link: 'https://vitepress.dev/', noIcon: true },

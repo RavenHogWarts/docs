@@ -7,7 +7,7 @@ order: 1
 
 ## 下载预编译版本
 
-1. 访问 [Releases页面](https://github.com/RavenHogwarts/open-folder-with-obsidian/releases)
+1. 访问 [Releases页面](https://github.com/RavenHogwarts/obsidian-folder-opener/releases)
 2. 下载最新版本的 `obsidian-folder-opener.zip`, 并解压
 3. 以管理员身份运行安装程序 `obsidian_installer.exe`
 4. 按照提示完成安装

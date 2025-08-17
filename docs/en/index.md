@@ -58,7 +58,7 @@ hero:
           icon: 'FolderOpen',
           title: 'Obsidian Folder Opener',
           description: 'Right-click to open folders as Obsidian vaults in Windows',
-          link: '/open-folder-with-obsidian/'
+          link: '/obsidian-folder-opener/'
         }
       ]
     }
