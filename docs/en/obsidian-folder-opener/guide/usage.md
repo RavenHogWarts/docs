@@ -7,7 +7,7 @@ order: 1
 
 ## Download Pre-compiled Version
 
-1. Visit the [Releases page](https://github.com/RavenHogwarts/open-folder-with-obsidian/releases)
+1. Visit the [Releases page](https://github.com/RavenHogwarts/obsidian-folder-opener/releases)
 2. Download the latest version of `obsidian-folder-opener.zip` and extract it
 3. Run the installer `obsidian_installer.exe` as administrator
 4. Follow the prompts to complete the installation
