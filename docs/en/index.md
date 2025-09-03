@@ -24,12 +24,7 @@ hero:
       icon: 'Puzzle',
       title: 'Obsidian Plugins',
       items: [
-        {
-          icon: 'Gavel',
-          title: 'RavenHogwarts Toolkit(OTK)',
-          description: 'Multi-functional toolkit for enhanced productivity',
-          link: '/obsidian-ravenhogwarts-toolkit/'
-        },
+        
         {
           icon: 'CodeXml',
           title: 'Ace Code Editor',
@@ -37,17 +32,30 @@ hero:
           link: '/en/obsidian-ace-code-editor/'
         },
         {
-          icon: 'Telescope',
-          title: 'Yearly Glance',
-          description: 'Annual events overview with customizable management.',
-          link: '/obsidian-yearly-glance/'
-        },
-        {
           icon: 'Image',
           title: 'Custom Icons',
           description: 'Customize icons for workspaces and documents',
           link: '/obsidian-custom-icons/'
         },
+        {
+          icon: 'TableOfContents',
+          title: 'Next TOC',
+          description: 'New Generation Floating Table of Contents Navigation',
+          link: '/obsidian-next-toc/'
+        },
+        {
+          icon: 'Gavel',
+          title: 'RavenHogwarts Toolkit(OTK)',
+          description: 'Multi-functional toolkit for enhanced productivity',
+          link: '/obsidian-ravenhogwarts-toolkit/'
+        },
+        {
+          icon: 'Telescope',
+          title: 'Yearly Glance',
+          description: 'Annual events overview with customizable management.',
+          link: '/obsidian-yearly-glance/'
+        },
+        
       ]
     },
     {

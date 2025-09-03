@@ -62,7 +62,8 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
       'obsidian-custom-icons', 
       'obsidian-ravenhogwarts-toolkit',
       'obsidian-yearly-glance',
-      'obsidian-folder-opener'
+      'obsidian-folder-opener',
+      'obsidian-next-toc'
     ];
     
     // 插件自定义配置
@@ -126,8 +127,9 @@ const vitePressI18nConfig: VitePressI18nOptions = {
           items: [
             { text: 'Ace Code Editor', link: '/obsidian-ace-code-editor/' },
             { text: 'Custom Icons', link: '/obsidian-custom-icons/' },
-            { text: 'Yearly Glance', link: '/obsidian-yearly-glance/' },
+            { text: 'Next TOC', link: '/obsidian-next-toc/' },
             { text: 'RavenHogwarts Toolkit(OTK)', link: '/obsidian-ravenhogwarts-toolkit/' },
+            { text: 'Yearly Glance', link: '/obsidian-yearly-glance/' },
           ]
         },
         { text: '实用小工具',
@@ -194,8 +196,9 @@ const vitePressI18nConfig: VitePressI18nOptions = {
           items: [
             { text: 'Ace Code Editor', link: '/en/obsidian-ace-code-editor/' },
             { text: 'Custom Icons', link: '/en/obsidian-custom-icons/' },
-            { text: 'Yearly Glance', link: '/en/obsidian-yearly-glance/' },
+            { text: 'Next TOC', link: '/en/obsidian-next-toc/' },
             { text: 'RavenHogwarts Toolkit(OTK)', link: '/en/obsidian-ravenhogwarts-toolkit/' },
+            { text: 'Yearly Glance', link: '/en/obsidian-yearly-glance/' },
           ]
         },
         { text: 'Utilities',
