@@ -23,12 +23,7 @@ hero:
       icon: 'Puzzle',
       title: 'Obsidian 插件',
       items: [
-        {
-          icon: 'Gavel',
-          title: 'RavenHogwarts Toolkit(OTK)',
-          description: '多功能工具包，提升工作效率',
-          link: '/obsidian-ravenhogwarts-toolkit/'
-        },
+        
         {
           icon: 'CodeXml',
           title: 'Ace Code Editor',
@@ -36,17 +31,30 @@ hero:
           link: '/obsidian-ace-code-editor/'
         },
         {
-          icon: 'Telescope',
-          title: 'Yearly Glance',
-          description: '年度事件概览，支持自定义管理',
-          link: '/obsidian-yearly-glance/'
-        },
-        {
           icon: 'Image',
           title: 'Custom Icons',
           description: '为工作区与文档提供图标自定义',
           link: '/obsidian-custom-icons/'
         },
+        {
+          icon: 'TableOfContents',
+          title: 'Next TOC',
+          description: '新一代悬浮目录导航',
+          link: '/obsidian-next-toc/'
+        },
+        {
+          icon: 'Gavel',
+          title: 'RavenHogwarts Toolkit(OTK)',
+          description: '多功能工具包，提升工作效率',
+          link: '/obsidian-ravenhogwarts-toolkit/'
+        },
+        {
+          icon: 'Telescope',
+          title: 'Yearly Glance',
+          description: '年度事件概览，支持自定义管理',
+          link: '/obsidian-yearly-glance/'
+        },
+        
       ]
     },
     {
