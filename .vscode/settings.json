@@ -9,5 +9,6 @@
   },
   "markdown.copyFiles.destination": {
     "**/docs/**/*.md": "${documentWorkspaceFolder}/docs/public/images/doc/${fileName}"
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
