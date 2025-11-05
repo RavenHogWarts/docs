@@ -9,7 +9,7 @@ order: 4
 Add class names to the `cssclasses` property in your Obsidian document.
 
 ## Control TOC Display on Specific Pages
-Use the class names `NToc__SHOW-TOC` and `NToc__HIDE-TOC`.
+Use the class names `show-ntoc` and `hide-ntoc`.
 
 ## Control Automatic Heading Numbering on Specific Pages
-Use the class names `NToc__SHOW-TOC-NUMBER` and `NToc__HIDE-TOC-NUMBER`.
+Use the class names `show-ntoc-number` and `hide-ntoc-number`.
