@@ -5,8 +5,8 @@ draft: false
 ---
 
 # 过滤器
-过滤器允许您修改 Web Clipper [模板](/codex-obsidian-web-clipper/guide/templates)中的[变量](/codex-obsidian-web-clipper/advanced-usage/variables)。使用 <code v-pre>{{variable|filter}}</code> 语法将过滤器应用于变量。
-- 过滤器适用于任何类型的[变量](/codex-obsidian-web-clipper/advanced-usage/variables)，包括 `prompt`、`meta` 、 `selector` 和 `schema ` 变量。
+过滤器允许您修改 Web Clipper [模板](../guide/templates)中的[变量](../advanced-usage/variables)。使用 <code v-pre>{{variable|filter}}</code> 语法将过滤器应用于变量。
+- 过滤器适用于任何类型的[变量](../advanced-usage/variables)，包括 `prompt`、`meta` 、 `selector` 和 `schema ` 变量。
 - 过滤器可以链式使用，例如 <code v-pre>{{variable|filter1|filter2}}</code>，按照添加的顺序依次应用。
 
 ## 日期处理
@@ -161,7 +161,7 @@ draft: false
 - 指定小数位数：`3.14159|round:2` 返回 `3.14`。
 
 ## HTML 处理
-处理 HTML 内容并将其转换为 Markdown 格式。请注意，您的输入[变量](/codex-obsidian-web-clipper/advanced-usage/variables)必须包含 HTML 内容，例如使用 <code v-pre>{{fullHtml}}</code>、<code v-pre>{{contentHtml}}</code> 或 <code v-pre>{{selectorHtml:}}</code> 变量。
+处理 HTML 内容并将其转换为 Markdown 格式。请注意，您的输入[变量](../advanced-usage/variables)必须包含 HTML 内容，例如使用 <code v-pre>{{fullHtml}}</code>、<code v-pre>{{contentHtml}}</code> 或 <code v-pre>{{selectorHtml:}}</code> 变量。
 
 ### `markdown`
 将字符串转换为 [Obsidian 风格 Markdown](https://help.obsidian.md/obsidian-flavored-markdown) 格式的字符串。

@@ -12,7 +12,7 @@ draft: false
 
 要编辑模板，请从侧边栏选择相应模板。所有修改将自动保存。
 
-模板利用[变量](/codex-obsidian-web-clipper/advanced-usage/variables)和[过滤器](/codex-obsidian-web-clipper/advanced-usage/filters)，让您可以自定义内容的保存方式。
+模板利用[变量](../advanced-usage/variables)和[过滤器](../advanced-usage/filters)，让您可以自定义内容的保存方式。
 
 ## 导入和导出模板
 导入模板的方法：
@@ -30,13 +30,13 @@ draft: false
 - 添加到现有笔记的顶部或底部
 - 添加到每日笔记，在顶部或底部（需要[日记插件](https://help.obsidian.md/plugins/daily-notes)处于活动状态）
 
-### 自动触发模板
+### 模版触发器
 模板触发器允许您根据当前页面 URL 或 [schema.org](https://schema.org/) 数据自动选择模板。您可以为每个模板定义多条规则，用换行符分隔。
 
 模板列表中的首个匹配项将决定使用哪个模板。您可以在网页剪辑器设置中上下拖动模板来更改模板匹配顺序。
 
-#### 简单URL匹配
-简单匹配会在当前页面URL以给定模式开头时触发模板。例如：
+#### 简单 URL 匹配
+简单匹配会在当前页面 URL 以给定模式开头时触发模板。例如：
 - `https://obsidian.md` 将匹配任何以此文本开头的网址。
 
 ### 正则表达式匹配
@@ -49,7 +49,7 @@ draft: false
 - `schema:@Recipe.name` 将匹配存在 `@Recipe.name` 模式的页面。
 - `schema:@Recipe.name=Cookie` 将匹配 `@Recipe.name` 模式为 `"Cookie"` 的页面。
 
-Schema.org值也可用于[预填充模板](/codex-obsidian-web-clipper/advanced-usage/variables.md#schemaorg-变量)中的数据。
+Schema.org值也可用于[预填充模板](../advanced-usage/variables.md#schemaorg-变量)中的数据。
 
 ## 解释器上下文
-启用[解释器](/codex-obsidian-web-clipper/advanced-usage/interpreter)后，您可以使用[提示词变量](/codex-obsidian-web-clipper/advanced-usage/variables.md#提示词变量)通过自然语言提取页面内容。每个模板都可以定义解释器可访问的上下文。
+启用[解释器](../advanced-usage/interpreter)后，您可以使用[提示词变量](../advanced-usage/variables.md#提示词变量)通过自然语言提取页面内容。每个模板都可以定义解释器可访问的上下文。
