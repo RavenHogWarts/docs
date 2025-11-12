@@ -6,6 +6,11 @@ draft: false
 
 # Obsidian Web Clipper
 
+::: info 源文档地址
+https://help.obsidian.md/web-clipper
+:::
+
+
 Obsidian Web Clipper 是一款免费的浏览器扩展程序，可让您突出显示页面并将 Web 内容保存到您的保管库。
 
 ::: warning Obsidian v1.7.2+
