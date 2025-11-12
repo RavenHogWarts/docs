@@ -50,7 +50,7 @@ draft: false
 {{selectorHtml:#main}}
 ```
 
-这仅会在网页存在 `#main` 元素时运行解释器。[HTML 处理过滤器](./filters.md)(如 `remove_html`、`strip_tags`和 `strip_attr` )有助于进一步缩减上下文长度并提升处理速度。
+这仅会在网页存在 `#main` 元素时运行解释器。[HTML 处理过滤器](./filters.md#html-处理)(如 `remove_html`、`strip_tags`和 `strip_attr` )有助于进一步缩减上下文长度并提升处理速度。
 
 
 ## 模型

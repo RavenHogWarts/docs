@@ -71,9 +71,9 @@ Web Clipper [模板](./templates.md)可以使用变量自动预填充页面数�
 - <code v-pre>{{selector:.author}}</code> 返回页面上任何 `.author` 元素的文本内容。
 - <code v-pre>{{selector:img.hero?src}}</code> 返回具有 `hero` 类的图像的 `src` 属性。
 - <code v-pre>{{selector:a.main-link?href}}</code> 返回具有 `main-link` 类的 a 标签的 `href` 属性。
-- <code v-pre>{{selectorHtml:body|markdown}}</code> 返回 `body` 元素的完整 HTML，并使用[过滤器](./filters.md)转换为 Markdown 格式。
+- <code v-pre>{{selectorHtml:body|markdown}}</code> 返回 `body` 元素的完整 HTML，并使用[过滤器](./filters.md#markdown)转换为 Markdown 格式。
 - 如果你需要更精确的选择，支持嵌套CSS选择器和组合器。
-- 如果多个元素匹配选择器，将返回一个数组，你可以使用[数组和对象过滤器](./filters.md)（如 `join` 或 `map` ）进行处理。
+- 如果多个元素匹配选择器，将返回一个数组，你可以使用[数组和对象过滤器](./filters.md#数组和对象处理)（如 `join` 或 `map` ）进行处理。
 
 ## Schema.org 变量
 `Schema.org 变量` 允许您从页面上的 [schema.org](https://schema.org/) JSON-LD中提取数据。Schema.org 数据也可用于自动[触发模板](./templates.md)。
