@@ -5,14 +5,14 @@ draft: false
 ---
 
 # 模板
-[Web Clipper](./index.md) 允许您创建模板，自动从网页中捕获并整理元数据。示例模板可在 [clipper-templates 代码库](https://github.com/kepano/clipper-templates)中获取。
+[Web Clipper](../index.md) 允许您创建模板，自动从网页中捕获并整理元数据。示例模板可在 [clipper-templates 代码库](https://github.com/kepano/clipper-templates)中获取。
 
 ## 创建或编辑模板
 要创建模板，请进入 Web Clipper `设置`，在侧边栏中点击 `新建模板` 按钮。您也可以通过右上角 `更多操作` 菜单中的选项复制现有模板。
 
 要编辑模板，请从侧边栏选择相应模板。所有修改将自动保存。
 
-模板利用[变量](./variables.md)和[过滤器](./filters.md)，让您可以自定义内容的保存方式。
+模板利用[变量](advanced-usage/variables.md)和[过滤器](advanced-usage/filters.md)，让您可以自定义内容的保存方式。
 
 ## 导入和导出模板
 导入模板的方法：
@@ -49,7 +49,7 @@ draft: false
 - `schema:@Recipe.name` 将匹配存在 `@Recipe.name` 模式的页面。
 - `schema:@Recipe.name=Cookie` 将匹配 `@Recipe.name` 模式为 `"Cookie"` 的页面。
 
-Schema.org值也可用于[预填充模板](./variables.md#schemaorg-变量)中的数据。
+Schema.org值也可用于[预填充模板](advanced-usage/variables.md#schemaorg-变量)中的数据。
 
 ## 解释器上下文
-启用[解释器](./interpreter.md)后，您可以使用[提示词变量](./variables.md#提示词变量)通过自然语言提取页面内容。每个模板都可以定义解释器可访问的上下文。
+启用[解释器](advanced-usage/interpreter.md)后，您可以使用[提示词变量](advanced-usage/variables.md#提示词变量)通过自然语言提取页面内容。每个模板都可以定义解释器可访问的上下文。

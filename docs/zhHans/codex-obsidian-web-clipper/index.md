@@ -1,5 +1,5 @@
 ---
-title: 介绍
+title: Obsidian Web Clipper 介绍
 order: 1
 draft: false
 ---
@@ -20,13 +20,13 @@ Web Clipper 依赖于 Obsidian 1.7.2 中添加到 Obsidian URI 的功能。
 - [Edge 附件组件](https://microsoftedge.microsoft.com/addons/detail/obsidian-web-clipper/eigdjhmgnaaeaonimdklocfekkaanfme)
 
 ## 如何使用 Web Clipper
-- [网页剪藏](./capture.md)
-- [高亮标注](./highlight.md)
-- [解释器](./interpreter.md)
-- [模板](./templates.md)
-- [变量](./variables.md)
-- [过滤器](./filters.md)
-- [故障排查](./troubleshoot.md)
+- [网页剪藏](guide/capture.md)
+- [高亮标注](guide/highlight.md)
+- [模板](guide/templates.md)
+- [解释器](advanced-usage/interpreter.md)
+- [变量](advanced-usage/variables.md)
+- [过滤器](advanced-usage/filters.md)
+- [故障排查](support/troubleshoot.md)
 
 ## 隐私
 Obsidian Web Clipper 将内容本地保存到您的 Obsidian 保管库，并遵守我们的[隐私政策](https://obsidian.md/privacy)。我们不会收集您的数据，也不会收集任何使用指标。该代码是[开源](https://github.com/obsidianmd/obsidian-clipper)且可审计的。
