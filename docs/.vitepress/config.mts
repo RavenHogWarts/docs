@@ -63,14 +63,12 @@ const vitePressSidebarConfig: VitePressSidebarOptions[] = [
       'obsidian-ravenhogwarts-toolkit',
       'obsidian-yearly-glance',
       'obsidian-folder-opener',
-      'obsidian-next-toc'
+      'obsidian-next-toc',
+      'codex-obsidian-web-clipper'
     ];
     
     // 插件自定义配置
     const pluginCustomConfigs: Record<string, Partial<VitePressSidebarOptions>> = {
-      // 'obsidian-ravenhogwarts-toolkit': {
-      //   manualSortFileNameByPriority: ['index.md', 'features', 'advanced-usage', 'support']
-      // }
       'obsidian-yearly-glance': {
         manualSortFileNameByPriority: ['index.md', 'guide', 'setting', 'advanced-usage', 'about','support'],
       }
@@ -135,6 +133,12 @@ const vitePressI18nConfig: VitePressI18nOptions = {
         { text: '实用小工具',
           items: [
             { text: 'Obsidian文件夹打开器', link: '/obsidian-folder-opener/' },
+          ]
+        },
+        {
+          text: '技术文档翻译',
+          items: [
+            { text: 'Obsidian Web Clipper', link: '/codex-obsidian-web-clipper/' },
           ]
         },
         { text: `VitePress ${pkg.version}`, link: 'https://vitepress.dev/zh/', noIcon: true },

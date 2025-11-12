@@ -68,6 +68,18 @@ hero:
           link: '/obsidian-folder-opener/'
         }
       ]
+    },
+    {
+      icon: 'Languages',
+      title: '技术文档翻译',
+      items: [
+        {
+          icon: 'Scissors',
+          title: 'Obsidian Web Clipper',
+          description: 'Obsidian 浏览器剪藏插件',
+          link: '/codex-obsidian-web-clipper/'
+        }
+      ]
     }
   ]
 </script>
