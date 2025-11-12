@@ -6,7 +6,7 @@ draft: false
 
 # 变量
 
-Web Clipper [模板](guide/templates.md)可以使用变量自动预填充页面数据到模板中。变量可用于笔记名称、笔记位置、属性字段和笔记内容中。变量还可以通过[过滤器](advanced-usage/filters.md)进行修改。
+Web Clipper [模板](/codex-obsidian-web-clipper/guide/templates)可以使用变量自动预填充页面数据到模板中。变量可用于笔记名称、笔记位置、属性字段和笔记内容中。变量还可以通过[过滤器](/codex-obsidian-web-clipper/advanced-usage/filters)进行修改。
 
 使用 Web Clipper 扩展中的 `...` 图标即可获取当前页面变量，以便在模板中使用。
   
@@ -17,14 +17,14 @@ Web Clipper [模板](guide/templates.md)可以使用变量自动预填充页面�
 | 变量 | 描述 |
 | - | - |
 | <code v-pre>{{author}}</code>        | 页面作者 |
-| <code v-pre>{{content}}</code>       | 文章内容、[高亮内容](guide/highlight.md)或选区内容，采用 Markdown 格式 |
-| <code v-pre>{{contentHtml}}</code>   | 文章内容、[高亮内容](guide/highlight.md)或选区内容，采用 HTML 格式 |
+| <code v-pre>{{content}}</code>       | 文章内容、[高亮内容](/codex-obsidian-web-clipper/guide/highlight)或选区内容，采用 Markdown 格式 |
+| <code v-pre>{{contentHtml}}</code>   | 文章内容、[高亮内容](/codex-obsidian-web-clipper/guide/highlight)或选区内容，采用 HTML 格式 |
 | <code v-pre>{{date}}</code>          | 当前日期，可使用过滤器进行格式化 |
 | <code v-pre>{{description}}</code>   | 描述或摘要 |
 | <code v-pre>{{domain}}</code>        | 域名 |
 | <code v-pre>{{favicon}}</code>       | 网站图标链接 |
 | <code v-pre>{{fullHtml}}</code>      | 未处理的完整页面 HTML 内容 |
-| <code v-pre>{{highlights}}</code>    | 带文字和时间戳的[高亮内容](guide/highlight.md) |
+| <code v-pre>{{highlights}}</code>    | 带文字和时间戳的[高亮内容](/codex-obsidian-web-clipper/guide/highlight) |
 | <code v-pre>{{image}}</code>         | 社交媒体分享图片链接 |
 | <code v-pre>{{published}}</code>     | 发布日期，可使用过滤器进行格式化 |
 | <code v-pre>{{selection}}</code>     | 以 Markdown 格式的选区内容 |
@@ -36,13 +36,13 @@ Web Clipper [模板](guide/templates.md)可以使用变量自动预填充页面�
 | <code v-pre>{{words}}</code>         | 字数统计 |
 
 ## 提示词变量
-`提示词变量` 的优势在于极其灵活且易于编写，但也存在一些权衡：运行速度较慢，并且根据所选[服务商](advanced-usage/interpreter.md)的不同，可能涉及成本和隐私方面的考量。
+`提示词变量` 的优势在于极其灵活且易于编写，但也存在一些权衡：运行速度较慢，并且根据所选[服务商](/codex-obsidian-web-clipper/advanced-usage/interpreter)的不同，可能涉及成本和隐私方面的考量。
 
-与其他变量类型不同，提示变量需要由外部语言模型处理，因此只有在[解释器](advanced-usage/interpreter.md)运行后才会被替换。
+与其他变量类型不同，提示变量需要由外部语言模型处理，因此只有在[解释器](/codex-obsidian-web-clipper/advanced-usage/interpreter)运行后才会被替换。
 
 如果所需提取的数据格式一致，最好使用其他变量类型而非提示变量进行提取。
 
-另一方面，如果所需提取的数据在不同网站间格式不一致，提示变量会非常实用。例如，您可以创建一个与图书网站无关的通用[模板](guide/templates.md)来保存图书信息。像 <code v-pre>{{"author of the book"}}</code> 这样的提示变量适用于任何图书网站，而选择器变量通常仅适用于单一网站。
+另一方面，如果所需提取的数据在不同网站间格式不一致，提示变量会非常实用。例如，您可以创建一个与图书网站无关的通用[模板](/codex-obsidian-web-clipper/guide/templates)来保存图书信息。像 <code v-pre>{{"author of the book"}}</code> 这样的提示变量适用于任何图书网站，而选择器变量通常仅适用于单一网站。
 
 ### 示例
 提示词几乎可以使用任何自然语言查询。根据您使用的模型，提示词能够跨语言查询或翻译数据。
@@ -71,12 +71,12 @@ Web Clipper [模板](guide/templates.md)可以使用变量自动预填充页面�
 - <code v-pre>{{selector:.author}}</code> 返回页面上任何 `.author` 元素的文本内容。
 - <code v-pre>{{selector:img.hero?src}}</code> 返回具有 `hero` 类的图像的 `src` 属性。
 - <code v-pre>{{selector:a.main-link?href}}</code> 返回具有 `main-link` 类的 a 标签的 `href` 属性。
-- <code v-pre>{{selectorHtml:body|markdown}}</code> 返回 `body` 元素的完整 HTML，并使用[过滤器](advanced-usage/filters.md#markdown)转换为 Markdown 格式。
+- <code v-pre>{{selectorHtml:body|markdown}}</code> 返回 `body` 元素的完整 HTML，并使用[过滤器](/codex-obsidian-web-clipper/advanced-usage/filters.md#markdown)转换为 Markdown 格式。
 - 如果你需要更精确的选择，支持嵌套CSS选择器和组合器。
-- 如果多个元素匹配选择器，将返回一个数组，你可以使用[数组和对象过滤器](advanced-usage/filters.md#数组和对象处理)（如 `join` 或 `map` ）进行处理。
+- 如果多个元素匹配选择器，将返回一个数组，你可以使用[数组和对象过滤器](/codex-obsidian-web-clipper/advanced-usage/filters.md#数组和对象处理)（如 `join` 或 `map` ）进行处理。
 
 ## Schema.org 变量
-`Schema.org 变量` 允许您从页面上的 [schema.org](https://schema.org/) JSON-LD中提取数据。Schema.org 数据也可用于自动[触发模板](guide/templates.md)。
+`Schema.org 变量` 允许您从页面上的 [schema.org](https://schema.org/) JSON-LD中提取数据。Schema.org 数据也可用于自动[触发模板](/codex-obsidian-web-clipper/guide/templates)。
 - <code v-pre>{{schema:@Type:key}}</code> 返回对应键的值。
 - <code v-pre>{{schema:@Type:parent.child}}</code> 返回嵌套属性的值。
 - <code v-pre>{{schema:@Type:arrayKey}}</code> 返回数组中的第一个元素。

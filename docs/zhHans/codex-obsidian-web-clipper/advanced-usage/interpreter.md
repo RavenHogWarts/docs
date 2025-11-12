@@ -16,23 +16,23 @@ draft: false
 <video controls="" preload="metadata" src="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/Attachments/video/web-clipper-interpreter-demo.mp4#t=0.001" style="" draggable="true"></video>
 
 ## 提示词示例
-提示词采用[变量](advanced-usage/variables.md)语法 <code v-pre>{{"your prompt"}}</code>。您可以将此语法与任何自然语言查询结合使用，例如：
+提示词采用[变量](/codex-obsidian-web-clipper/advanced-usage/variables)语法 <code v-pre>{{"your prompt"}}</code>。您可以将此语法与任何自然语言查询结合使用，例如：
 - <code v-pre>{{"a summary of the page"}}</code> 提取页面摘要。
 - <code v-pre>{{"a three bullet point summary, translated to French"}}</code> 提取关于页面的要点，并将其翻译成法语。
 - <code v-pre>{{"un resumé de la page en trois points"}}</code> 使用法语提示提取三个要点。
 
-提示的响应结果可以通过[过滤器](advanced-usage/filters.md)进一步处理。过滤器在从模型接收到提示响应后进行加工。例如：<code v-pre>{{"a summary of the page"|blockquote}}</code> 会将响应转换为块引用。
+提示的响应结果可以通过[过滤器](/codex-obsidian-web-clipper/advanced-usage/filters)进一步处理。过滤器在从模型接收到提示响应后进行加工。例如：<code v-pre>{{"a summary of the page"|blockquote}}</code> 会将响应转换为块引用。
 
 ## 开始使用
 解释器几乎可与任何语言模型提供商配合使用，包括在您设备上私有运行的选项。要设置解释器：
 1. 前往 Web Clipper 设置中的解释器部分。
 2. 开启启用解释器功能。
 3. 配置您的提供商和模型，请参阅下文[模型](#模型)部分。
-4. 将[提示词变量](advanced-usage/variables.md#提示词变量)添加到您的[模板](guide/templates.md)中。
+4. 将[提示词变量](/codex-obsidian-web-clipper/advanced-usage/variables.md#提示词变量)添加到您的[模板](/codex-obsidian-web-clipper/guide/templates)中。
 5. 如果您的模板包含提示变量，在剪辑页面时解释器部分将会显示。点击解释按钮来处理提示变量。
 
 ## 工作原理
-当启用解释器功能且您的模板包含[提示词变量](advanced-usage/variables.md#提示词变量)时，扩展窗口的 `添加到 Obsidian` 按钮上方会显示新的解释器功能区。该区域允许您选择模型并为当前页面运行解释器。
+当启用解释器功能且您的模板包含[提示词变量](/codex-obsidian-web-clipper/advanced-usage/variables.md#提示词变量)时，扩展窗口的 `添加到 Obsidian` 按钮上方会显示新的解释器功能区。该区域允许您选择模型并为当前页面运行解释器。
 
 当你点击解释按钮时，解释器会将页面上下文与你模板中的所有提示词一并发送至所选模型。根据你选择的模型服务商，这可能是外部调用或设备本地运算。模型会基于页面上下文评估你的提示词并返回响应结果，随后解释器将用响应数据替换提示变量。
 
@@ -43,14 +43,14 @@ draft: false
 
 默认情况下，解释器使用整个页面的HTML作为其上下文，但这可能导致提示处理速度变慢且成本超出必要范围。
 
-您可以在解释器高级设置中覆盖默认上下文，并为每个[模板](guide/templates.md)单独定义上下文。
+您可以在解释器高级设置中覆盖默认上下文，并为每个[模板](/codex-obsidian-web-clipper/guide/templates)单独定义上下文。
 
-要定义更具针对性的上下文，请使用[选择器变量](advanced-usage/variables.md#选择器变量)（或其他变量类型）来解析页面的某个部分。例如，您可以在模板的解释器上下文中使用以下选择器变量：
+要定义更具针对性的上下文，请使用[选择器变量](/codex-obsidian-web-clipper/advanced-usage/variables.md#选择器变量)（或其他变量类型）来解析页面的某个部分。例如，您可以在模板的解释器上下文中使用以下选择器变量：
 ```js
 {{selectorHtml:#main}}
 ```
 
-这仅会在网页存在 `#main` 元素时运行解释器。[HTML 处理过滤器](advanced-usage/filters.md#html-处理)(如 `remove_html`、`strip_tags`和 `strip_attr` )有助于进一步缩减上下文长度并提升处理速度。
+这仅会在网页存在 `#main` 元素时运行解释器。[HTML 处理过滤器](/codex-obsidian-web-clipper/advanced-usage/filters.md#html-处理)(如 `remove_html`、`strip_tags`和 `strip_attr` )有助于进一步缩减上下文长度并提升处理速度。
 
 
 ## 模型
@@ -112,4 +112,4 @@ ollama run llama3.2
 #### 上下文长度
 Ollama 的上下文窗口默认设置为2048个词元。这是消息和响应的最大词元数量。在截取长网页内容时，很容易超出此限制。Ollama 会静默失败并返回无关结果。一些解决方案：
 - 增加Ollama的 `num_ctx` 参数。请注意，更长的上下文需要更多内存。
-- 在模板中使用 [`上下文`](#上下文) 字段提供页面上更具针对性的部分，或使用[过滤器](advanced-usage/filters.md)（例如 <code v-pre>{{content|slice:0,1000}}</code> ）来裁剪上下文。
+- 在模板中使用 [`上下文`](#上下文) 字段提供页面上更具针对性的部分，或使用[过滤器](/codex-obsidian-web-clipper/advanced-usage/filters)（例如 <code v-pre>{{content|slice:0,1000}}</code> ）来裁剪上下文。
