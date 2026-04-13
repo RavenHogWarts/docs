@@ -1,6 +1,6 @@
 ---
 title: 网页剪藏
-order: 2
+order: 1
 draft: false
 ---
 
@@ -36,12 +36,12 @@ Web Clipper 包含可加速工作流程的键盘快捷键。
 默认的快捷键可能会与浏览器其他功能的快捷键冲突。
 :::
 
-| 动作 | MacOS | Windows/Linux |
-| - | - | - |
+| 动作             | MacOS         | Windows/Linux  |
+| ---------------- | ------------- | -------------- |
 | 开启 Web Clipper | `Cmd+Shift+O` | `Ctrl+Shift+O` |
-| 快速剪藏 | `Opt+Shift+O` | `Alt+Shift+O` |
-| 切换高亮模式 | `Opt+Shift+H` | `Alt+Shift+H` |
-| 切换阅读模式 | `Opt+Shift+R` | `Alt+Shift+R` |
+| 快速剪藏         | `Opt+Shift+O` | `Alt+Shift+O`  |
+| 切换高亮模式     | `Opt+Shift+H` | `Alt+Shift+H`  |
+| 切换阅读模式     | `Opt+Shift+R` | `Alt+Shift+R`  |
 
 ## 界面功能
 Web Clipper 界面分为四个部分：
